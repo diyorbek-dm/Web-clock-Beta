@@ -1,0 +1,30 @@
+@mixin font-nav {
+  font-family: $font-roboto;
+  font-size: $font-size-nav;
+  font-weight: 500;
+}
+
+@mixin font-stopwatch {
+  font-family: $font-inria;
+  font-size: $font-size-stopwatch;
+}
+
+@mixin font-stopwatch-mini {
+  font-family: 'Dolce Vita', sans-serif;
+}
+
+@mixin font-main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $font-size-main;
+}
+
+@mixin font-stopwatch {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+@mixin font-main-info {
+  font-family: $font-inria;
+  font-size: $font-size-main-info;
+}

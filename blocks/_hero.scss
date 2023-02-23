@@ -1,0 +1,28 @@
+.display-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+
+  .box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    p {
+      @include font-main;
+    }
+  }
+
+  .box-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      @include font-main-info;
+    }
+  }
+}
