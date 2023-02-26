@@ -1,30 +1,100 @@
+// Main
+@mixin font-main {
+  font-family: $font-iniva;
+  font-weight: bold;
+  font-size: 110px;
+}
+
+// Main - Info
+@mixin font-main-info {
+  font-family: $font-iniva;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+// Nav
 @mixin font-nav {
-  font-family: $font-roboto;
-  font-size: $font-size-nav;
+  font-family: $font-iniva;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+// Timer
+@mixin font-timer-done-title {
+  color: #464C55;
+  font-family: $font-iniva;
+  font-weight: 600;
+  font-size: 53px;
+}
+
+// Timer - Input Subtitle (Minutes, Senonds, Hours)
+@mixin font-timer-input-subtitle {
+  color: #B1B1B1;
+  font-family: $font-iniva;
+  font-weight: 400;
+
+}
+
+// Timer - Output colon
+@mixin timer-output-colon {
+  color: white;
+  font-size: 120px;
+  font-family: $font-iniva;
+  font-weight: 600;
+}
+
+// Timer - Output time
+@mixin timer-output-time {
+  color: white;
+  font-size: 120px;
+  font-family: $font-iniva;
+  font-weight: 600;
+  border: none;
+}
+
+// Timer - Done button
+@mixin font-timer-done-button {
+  font-family: $font-iniva;
+  font-weight: 500;
+  font-size: 18px;
+  color: #464C55;
+}
+
+// Timer - Input
+@mixin font-timer-input {
+  color: white;
+  font-size: 30px;
+  font-family: $font-iniva;
   font-weight: 500;
 }
 
+// Timer - Start button
+@mixin font-timer-start {
+  color: white;
+  font-size: 20px;
+  font-family: $font-iniva;
+  font-weight: 500;
+}
+
+// Stopwatch
 @mixin font-stopwatch {
-  font-family: $font-inria;
-  font-size: $font-size-stopwatch;
+  font-family: $font-iniva;
+  font-weight: 600;
+  font-size: 100px;
 }
 
-@mixin font-stopwatch-mini {
-  font-family: 'Dolce Vita', sans-serif;
+// Stopwatch - Buttons
+@mixin font-stopwatch-start {
+  font-family: $font-iniva;
+  font-weight: 500;
+  font-size: 22px;
+  color: white;
 }
 
-@mixin font-main {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: $font-size-main;
-}
-
-@mixin font-stopwatch {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 120px;
-  font-weight: bold;
-}
-
-@mixin font-main-info {
-  font-family: $font-inria;
-  font-size: $font-size-main-info;
+// Theme
+@mixin font-theme {
+  font-family: $font-iniva;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
 }

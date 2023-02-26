@@ -1,32 +1,39 @@
-// Font Family
+// Font Family Links
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
+
+// Univa Nova - Bold
 @font-face {
-  font-family: 'Dolce Vita';
-  src: url(../fonts/Dolce-Vita-Light.woff2),
-  url(../fonts/Dolce-Vita.woff);
+  font-family: 'Univa Nova';
+  src: url(../fonts/UnivaNova-Bold.woff2),
+  url(../fonts/UnivaNova-Bold.woff);
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+// Univa Nova - Medium
+@font-face {
+  font-family: 'Univa Nova';
+  src: url(../fonts/UnivaNova-Medium.woff2),
+  url(../fonts/UnivaNova-Medium.woff);
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+// Univa Nova - Regular
+@font-face {
+  font-family: 'Univa Nova';
+  src: url(../fonts/UnivaNova-Regular.woff2),
+  url(../fonts/UnivaNova-Regular.woff);
   font-display: swap;
   font-style: normal;
   font-weight: 400;
 }
 
-@font-face {
-  font-family: 'Dolce Vita';
-  src: url(../fonts/Dolce-Vita-Heavy-Bold.woff2),
-  url(../fonts/Dolce-Vita-Heavy-Bold.woff);
-  font-display: swap;
-  font-style: normal;
-  font-weight: 700;
-}
-
-$font-inria: 'Inria Sans', sans-serif;
-$font-dolce-vita: 'Dolce Vita', sans-serif;
+// Font family
+$font-iniva: 'Univa Nova', sans-serif;
 $font-roboto: 'Roboto', sans-serif;
-
-// Font Size
-$font-size-stopwatch: 100px;
-$font-size-main: 110px;
-$font-size-nav: 20px;
-$font-size-main-info: 35px

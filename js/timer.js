@@ -122,16 +122,6 @@ timerStart.addEventListener('click', () => {
           elem.style = 'animation: none;'
         })
 
-        // * None btn - Stop / Delete
-        tPause.classList.remove('active-btn')
-        tPause.classList.add('none')
-
-        tDelete.classList.remove('active-btn')
-        tDelete.classList.add('none')
-
-        tStart.classList.remove('none')
-        tStart.classList.add('active-btn')
-
         timerStart.style = 'background-color: #464C55;'
       }
 
@@ -154,32 +144,4 @@ timerStart.addEventListener('click', () => {
 
     clearInterval(inTimer)
   }
-})
-
-// Pause
-timerPause.addEventListener('click', () => {
-  // clearInterval(inTimer)
-  // tStart.classList.remove('none')
-  // tStart.classList.add('active-btn')
-
-  // tPause.classList.remove('active-btn')
-  // tPause.classList.add('none')
-
-  // tDelete.classList.remove('active-btn')
-  // tDelete.classList.add('none')
-
-  // timerStart.style = 'background-color: #464C55;'
-})
-
-// Delete
-timerDelete.addEventListener('click', () => {
-  uHour.innerHTML = `00`
-  uSec.innerHTML = `00`
-  uMin.innerHTML = `00`
-
-  uSec.value = `00`
-  uMin.value = `00`
-  uHour.value = `00`
-
-  clearInterval(inTimer)
 })

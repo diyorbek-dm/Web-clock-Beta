@@ -16,8 +16,8 @@ input {
   align-items: center;
 
   span {
+    @include font-timer-input-subtitle;
     margin-top: 10px;
-    color: #B1B1B1;
   }
 }
 
@@ -40,25 +40,21 @@ input {
   }
 
   h1 {
-    color: #464C55;
-    font-weight: 700;
-    font-size: 53px;
+    @include font-timer-done-title;
 
     margin-top: 70px;
     margin-bottom: 20px;
   }
 
   button {
+    @include font-timer-done-button;
     width: 140px;
     height: 40px;
     border-radius: 25px;
     border: 2px solid #464C55;
     background-color: transparent;
-    font-weight: 500;
-    font-size: 18px;
-    color: #464C55;
     transition: 0.5s ease;
-    
+
     &:hover {
       color: white;
       background: #464C55;
@@ -81,18 +77,11 @@ input {
   margin-bottom: 70px;
 
   .colon {
-    color: white;
-    font-size: 120px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    @include timer-output-colon;
   }
 
-  .timer-span {
-    color: white;
-    font-size: 120px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    border: none;
+  .timer-output-time {
+    @include timer-output-time;
   }
 
 }
@@ -112,14 +101,12 @@ input {
     display: flex;
     text-align: center;
 
+    @include font-timer-input;
     width: 80px;
     height: 70px;
     background: #454A54;
     border: 1.5px solid #B6B6B6;
     border-radius: 10px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
 
     &::placeholder {
       color: white;
@@ -132,11 +119,10 @@ input {
 }
 
 .timer-start {
+  @include font-timer-start;
   width: 160px;
   height: 55px;
   background: #464C55;
-  color: white;
-  font-size: 20px;
   box-shadow: 0px 4px 10px 0.5px rgba(70, 76, 85, 0.5);
   border-radius: 16px;
   border: none;

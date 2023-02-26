@@ -5,6 +5,10 @@
   border: none;
   padding: 25px 30px 25px 30px;
   transition: 2s ease-in;
+
+  h2 {
+    @include font-theme;
+  }
 }
 
 .grid {

@@ -122,7 +122,6 @@ theme.onclick = () => {
 }
 
 
-
 /* Main Clock */
 const mHour = document.querySelector('.m-hour'),
   mMinute = document.querySelector('.m-minute'),
@@ -133,8 +132,7 @@ const mHour = document.querySelector('.m-hour'),
   mDay = document.querySelector('.m-day'),
   mYear = document.querySelector('.m-year')
 
-const am = 'AM',
-  pm = 'PM'
+const am = 'AM', pm = 'PM'
 
 const week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 

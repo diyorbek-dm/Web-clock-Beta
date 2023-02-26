@@ -1,34 +1,3 @@
-.nav-stopwatch {
-  ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-
-    .home-active {
-      margin-right: 50px;
-
-      .home {
-        width: 25px;
-        height: 25px;
-      }
-    }
-
-    li {
-      &:not(:last-child) {
-        margin-right: 50px;
-      }
-
-      a {
-        @include font-nav;
-
-        &:hover {
-          border-bottom: 1.5px solid white;
-        }
-      }
-    }
-  }
-}
-
 .display-stopwatch {
   display: flex;
   flex-direction: column;
@@ -51,7 +20,7 @@
     .time {
       display: flex;
 
-      p {
+      P {
         @include font-stopwatch;
       }
     }
@@ -62,12 +31,6 @@
   box-shadow: 0px 0px 15px 2px #464C55;
 }
 
-// ! Btn active class
-.btn-active-start {
-  border: 2px solid red;
-  border-radius: 16px;
-}
-
 .form {
   display: flex;
   justify-content: center;
@@ -75,6 +38,10 @@
 
   margin-top: 70px;
 }
+
+.stopwatch-buttons {
+  @include font-stopwatch-start;
+} 
 
 .start {
   button {
@@ -86,10 +53,6 @@
     border: none;
     text-align: center;
     transition: 0.5s;
-
-    font-family: $font-roboto;
-    font-size: px;
-    color: white;
   }
 }
 
@@ -106,10 +69,6 @@
     border: none;
     text-align: center;
     transition: 0.5s;
-
-    font-family: $font-roboto;
-    font-size: px;
-    color: white;
   }
 }
 
@@ -123,9 +82,5 @@
     border: none;
     text-align: center;
     transition: 0.5s;
-
-    font-family: $font-roboto;
-    font-size: px;
-    color: white;
   }
 }

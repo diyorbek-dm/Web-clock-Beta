@@ -15,7 +15,6 @@ const dMain = document.querySelector('.display-main'),
   dStopwatch = document.querySelector('.display-stopwatch'),
   dTheme = document.querySelector('.display-theme')
 
-
 // Home
 home.onclick = () => {
   dMain.classList.add('active')
