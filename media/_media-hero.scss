@@ -1,0 +1,13 @@
+@media (min-width: 320px) and (max-width: 490px) {
+  .box-main {
+    p {
+      @include font-main-media;
+    }
+  }
+
+  .box-info {
+    p {
+      @include font-main-info-media;
+    }
+  }
+}

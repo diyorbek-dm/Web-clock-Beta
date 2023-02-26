@@ -90,7 +90,7 @@ input {
 .timer-done h1 {
   color: #464C55;
   font-family: "Univa Nova", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 53px;
   margin-top: 70px;
   margin-bottom: 20px;
@@ -136,7 +136,7 @@ input {
   color: white;
   font-size: 120px;
   font-family: "Univa Nova", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
 }
 

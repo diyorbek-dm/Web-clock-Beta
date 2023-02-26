@@ -1,7 +1,7 @@
 // Main
 @mixin font-main {
   font-family: $font-iniva;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 110px;
 }
 
@@ -23,7 +23,7 @@
 @mixin font-timer-done-title {
   color: #464C55;
   font-family: $font-iniva;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 53px;
 }
 
@@ -48,7 +48,7 @@
   color: white;
   font-size: 120px;
   font-family: $font-iniva;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
 }
 
@@ -79,7 +79,7 @@
 // Stopwatch
 @mixin font-stopwatch {
   font-family: $font-iniva;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 100px;
 }
 
@@ -97,4 +97,16 @@
   font-weight: 400;
   font-size: 24px;
   color: white;
+}
+
+// * Media
+
+// Main media
+@mixin font-main-media {
+  font-size: 38px;
+}
+
+// Main meida - info 
+@mixin font-main-info-media {
+  font-size: 20px;
 }

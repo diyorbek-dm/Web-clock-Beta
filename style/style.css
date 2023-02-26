@@ -90,7 +90,7 @@ input {
 .timer-done h1 {
   color: #464C55;
   font-family: "Univa Nova", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 53px;
   margin-top: 70px;
   margin-bottom: 20px;
@@ -136,7 +136,7 @@ input {
   color: white;
   font-size: 120px;
   font-family: "Univa Nova", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
 }
 
@@ -256,7 +256,7 @@ input {
 }
 .display-stopwatch .box-stopwatch .time P {
   font-family: "Univa Nova", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 100px;
 }
 
@@ -330,7 +330,7 @@ input {
 }
 .display-main .box-main p {
   font-family: "Univa Nova", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 110px;
 }
 .display-main .box-info {
@@ -481,5 +481,13 @@ input {
   }
   100% {
     opacity: 1;
+  }
+}
+@media (min-width: 320px) and (max-width: 490px) {
+  .box-main p {
+    font-size: 38px;
+  }
+  .box-info p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
