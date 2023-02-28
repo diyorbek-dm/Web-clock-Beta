@@ -484,14 +484,68 @@ input {
   }
 }
 @media (max-width: 320px) {
+  .inputs .input {
+    width: 73px;
+    font-size: 26px;
+  }
+  .inputs .timer-output .colon {
+    font-size: 35px;
+  }
+}
+@media (max-width: 320px) {
+  .display-main {
+    margin-top: 40px;
+  }
+  .display-main .media-main-background {
+    display: block;
+    width: 300px;
+    margin-bottom: 60px;
+  }
   .display-main .box-main p {
     font-size: 42px;
   }
   .display-main .box-info p {
     font-size: 22px;
+    color: #C9C9C9;
+  }
+  .media-global-time {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 50px;
+  }
+  .mgt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mgt .global-title {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+  }
+  .mgt h2 {
+    font-family: "Univa Nova", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .mgt span {
+    font-family: "Univa Nova", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #C9C9C9;
+  }
+  .mgt .media-time-span {
+    font-family: "Univa Nova", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: white;
+  }
+  .mgt:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   .nav-main {
     display: none;
   }

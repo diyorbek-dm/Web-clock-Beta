@@ -15,16 +15,13 @@
   <!-- * Menu Nav * -->
   <nav class="nav-main">
     <ul class="item-list">
-      <li class="global-time"> <a href="#" class="a-hover">Global time</a> </li>
-      <li class="timer"> <a href="#" class="a-hover">Timer</a> </li>
-      <li class="box-home">
-        <a href="#"> <img src="./img/icons8-clock.svg" alt="Home" class="home"> </a>
+      <li class="box-home home">
+        <a href="#" class="a-hover">Clock</a>
       </li>
+      <li class="timer"> <a href="#" class="a-hover">Timer</a> </li>
       <li class="stopwatch"> <a href="#" class="a-hover">Stopwatch</a> </li>
-      <li class="theme"> <a href="#" class="a-hover">Theme</a> </li>
     </ul>
   </nav>
-
 
   <!-- * Menu Burger -->
   <div class="mune-burger-box none">
@@ -82,7 +79,8 @@
   <div class="all-tabs">
 
     <!-- Main -->
-    <div class="display-main">
+    <div class="display-main none">
+      <img src="./img/world-map.png" alt="" class="media-main-background none">
 
       <div class="box-main">
         <p class="m-hour">00 :</p>
@@ -98,16 +96,56 @@
         <p class="m-year">2023</p>
       </div>
 
+      <div class="media-global-time none">
 
+        <div class="london mgt">
+          <div class="global-title">
+            <h2>Pekin</h2>
+            <span>China</span>
+          </div>
+          <div class="city-time">
+            <span class="london-hour media-time-span">22</span>
+            <span class="london-minute media-time-span">22</span>
+          </div>
+        </div>
+
+        <div class="new-york mgt">
+          <div class="global-title">
+            <h2>New York</h2>
+            <span>USA</span>
+          </div>
+          <div class="city-time">
+            <span class="york-hour media-time-span">22</span>
+            <span class="york-minute media-time-span">22</span>
+          </div>
+        </div>
+
+        <div class="london mgt">
+          <div class="global-title">
+            <h2>Tokyo</h2>
+            <span>Japan</span>
+          </div>
+          <div class="city-time">
+            <span class="tokyo-hour media-time-span">22</span>
+            <span class="tokyo-minute media-time-span">22</span>
+          </div>
+        </div>
+
+        <div class="london mgt">
+          <div class="global-title">
+            <h2>London</h2>
+            <span>Great Britain</span>
+          </div>
+          <div class="city-time">
+            <span class="lon-hour media-time-span">22</span>
+            <span class="lon-minute media-time-span">22</span>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-    <!-- Global Time -->
-    <div class="display-global-time none">
-      <h1>Global Time</h1>
-    </div>
-
     <!-- Timer -->
-    <div class="display-timer none">
+    <div class="display-timer active">
       <div class="timer-box">
 
         <div class="timer-output">
@@ -185,58 +223,12 @@
 
     </div>
 
-    <!-- Clock Theme -->
-    <div class="display-theme none">
-      <div class="container">
-        <h2>Choose clock theme</h2>
-        <div class="grid">
-
-          <div class="item">
-            <a href="./index.html">
-              <img src="./img/static.jpeg" alt="Theme Preview">
-            </a>
-          </div>
-
-          <div class="item">
-            <a href="./pages/classic.html">
-              <img src="./img/classic.jpeg" alt="Theme Preview">
-            </a>
-          </div>
-
-          <div class="item">
-            <a href="./pages/minimalistic.html">
-              <img src="./img/minimalistic.jpeg" alt="Theme Preview">
-            </a>
-          </div>
-
-          <div class="item">
-            <a href="./pages/modern.html">
-              <img src="./img/modern.jpeg" alt="Theme Preview">
-            </a>
-          </div>
-
-          <div class="item">
-            <a href="./pages/wallpaper.html">
-              <img src="./img/wall.jpeg" alt="Theme Preview">
-            </a>
-          </div>
-
-          <div class="item">
-            <a href="./pages/big-size.html">
-              <img src="./img/bigsize.jpeg" alt="Theme Preview">
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <script src="./js/main.js"></script>
   <script src="./js/stopwatch.js"></script>
   <script src="./js/timer.js"></script>
-  <script src="./js/media-nav.js"></script>
+  <script src="./js/media-main.js"></script>
 </body>
 
 </html>

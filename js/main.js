@@ -3,17 +3,13 @@ const itemList = document.querySelectorAll('.item-list')
 
 // Nav > Menu Burger Tabs
 const home = document.querySelector('.home'),
-  globalTime = document.querySelector('.global-time'),
   timer = document.querySelector('.timer'),
-  stopWatch = document.querySelector('.stopwatch'),
-  theme = document.querySelector('.theme')
+  stopWatch = document.querySelector('.stopwatch')
 
 // Displays
 const dMain = document.querySelector('.display-main'),
-  dGlobalTimer = document.querySelector('.display-global-time'),
   dTimer = document.querySelector('.display-timer'),
-  dStopwatch = document.querySelector('.display-stopwatch'),
-  dTheme = document.querySelector('.display-theme')
+  dStopwatch = document.querySelector('.display-stopwatch')
 
 
 // Home
@@ -23,38 +19,11 @@ home.onclick = () => {
   if (dMain.classList.contains('active')) {
     dMain.classList.remove('none')
 
-    dGlobalTimer.classList.remove('active')
-    dGlobalTimer.classList.add('none')
-
     dTimer.classList.remove('active')
     dTimer.classList.add('none')
 
     dStopwatch.classList.remove('active')
     dStopwatch.classList.add('none')
-
-    dTheme.classList.remove('active')
-    dTheme.classList.add('none')
-  }
-}
-
-// Global Time
-globalTime.onclick = () => {
-  dGlobalTimer.classList.add('active')
-
-  if (dGlobalTimer.classList.contains('active')) {
-    dGlobalTimer.classList.remove('none')
-
-    dMain.classList.remove('active')
-    dMain.classList.add('none')
-
-    dTimer.classList.remove('active')
-    dTimer.classList.add('none')
-
-    dStopwatch.classList.remove('active')
-    dStopwatch.classList.add('none')
-
-    dTheme.classList.remove('active')
-    dTheme.classList.add('none')
   }
 }
 
@@ -68,14 +37,8 @@ timer.onclick = () => {
     dMain.classList.remove('active')
     dMain.classList.add('none')
 
-    dGlobalTimer.classList.remove('active')
-    dGlobalTimer.classList.add('none')
-
     dStopwatch.classList.remove('active')
     dStopwatch.classList.add('none')
-
-    dTheme.classList.remove('active')
-    dTheme.classList.add('none')
   }
 }
 
@@ -89,38 +52,10 @@ stopWatch.onclick = () => {
     dMain.classList.remove('active')
     dMain.classList.add('none')
 
-    dGlobalTimer.classList.remove('active')
-    dGlobalTimer.classList.add('none')
-
     dTimer.classList.remove('active')
     dTimer.classList.add('none')
-
-    dTheme.classList.remove('active')
-    dTheme.classList.add('none')
   }
 }
-
-// Theme
-theme.onclick = () => {
-  dTheme.classList.add('active')
-
-  if (dTheme.classList.contains('active')) {
-    dTheme.classList.remove('none')
-
-    dMain.classList.remove('active')
-    dMain.classList.add('none')
-
-    dGlobalTimer.classList.remove('active')
-    dGlobalTimer.classList.add('none')
-
-    dTimer.classList.remove('active')
-    dTimer.classList.add('none')
-
-    dStopwatch.classList.remove('active')
-    dStopwatch.classList.add('none')
-  }
-}
-
 
 /* Main Clock */
 const mHour = document.querySelector('.m-hour'),

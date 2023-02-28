@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media (max-width: 320px) {
 
   .nav-main {
     display: none;
@@ -7,11 +7,11 @@
   .mune-burger-box {
     display: flex;
   }
-  
+
   .media-nav {
     display: flex;
   }
-  
+
   .menu-container {
     display: flex;
   }
@@ -53,10 +53,6 @@
     }
   }
 
-  .menu-burber {
-    
-  }
-
   .menu-container {
     display: flex;
     flex-direction: column;
@@ -83,7 +79,7 @@
       font-weight: 500;
       font-size: 28px;
     }
-    
+
     .menu-clock-img {
       width: 31px;
       height: 31px;
@@ -94,7 +90,7 @@
       height: 30px;
       margin-right: 15px;
     }
-    
+
     &:not(:last-child) {
       margin-bottom: 25px;
     }
