@@ -15,6 +15,7 @@ const dMain = document.querySelector('.display-main'),
 // Home
 home.onclick = () => {
   dMain.classList.add('active')
+  console.log('Home page')
 
   if (dMain.classList.contains('active')) {
     dMain.classList.remove('none')
