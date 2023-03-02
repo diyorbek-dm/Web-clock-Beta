@@ -55,7 +55,7 @@ function check() {
 
     hour.innerHTML = `${hrs} :&nbsp;`
     minutes.innerHTML = `${min} :&nbsp;`
-    seconds.innerHTML = `${sec}&nbsp;`
+    seconds.innerHTML = `${sec}`
 
     clearInterval(interval)
   }
