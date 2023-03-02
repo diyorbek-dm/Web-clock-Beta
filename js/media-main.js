@@ -31,7 +31,7 @@ setInterval(() => {
 
   // New York
   let yorkData = new Date(),
-    yHour = yorkData.getHours() - 10,
+    yHour = yorkData.getHours() + 24 - 10,
     yMinute = yorkData.getMinutes()
 
   // Hours - New York
@@ -69,7 +69,7 @@ setInterval(() => {
 
   // London
   let lonData = new Date(),
-    lHour = yorkData.getHours() - 5,
+    lHour = yorkData.getHours() + 24 - 5,
     lMinute = yorkData.getMinutes()
 
   // Hour - London
@@ -127,7 +127,7 @@ bClock.onclick = () => {
 
   iClock.classList.add('active')
 
-  if(iClock.classList.contains('active')) {
+  if (iClock.classList.contains('active')) {
     iClock.classList.remove('none')
 
     iTimer.classList.remove('active')
@@ -156,7 +156,7 @@ bTimer.onclick = () => {
 
   iTimer.classList.add('active')
 
-  if(iTimer.classList.contains('active')) {
+  if (iTimer.classList.contains('active')) {
     iTimer.classList.remove('none')
 
     iClock.classList.remove('active')
@@ -185,7 +185,7 @@ bStopwatch.onclick = () => {
 
   iStopwatch.classList.add('active')
 
-  if(iStopwatch.classList.contains('active')) {
+  if (iStopwatch.classList.contains('active')) {
     iStopwatch.classList.remove('none')
 
     iClock.classList.remove('active')
@@ -199,4 +199,3 @@ bStopwatch.onclick = () => {
 // Beati
 
 const btnStopwatch = document.querySelector('.btn-start-stopwatch')
-

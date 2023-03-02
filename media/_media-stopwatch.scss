@@ -3,7 +3,7 @@
     margin-top: 40px;
 
     .box-stopwatch {
-      width: 375px;
+      width: 410px;
       height: 165px;
       background: #464C55;
       border: none;
@@ -11,7 +11,7 @@
 
       .time {
         p {
-          font-size: 68px;
+          font-size: 75px;
           text-shadow: none;
           color: #E3E3E3;
         }
@@ -38,9 +38,9 @@
     }
 
     .stopwatch-buttons {
-      font-size: 25px;
+      font-size: 27px;
       width: 180px;
-      height: 50px;
+      height: 55px;
     }
   }
 }
@@ -88,6 +88,34 @@
       font-size: 25px;
       width: 180px;
       height: 50px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .display-stopwatch {
+    .box-stopwatch {
+      width: 360px;
+      
+      .time {
+        p {
+          font-size: 66px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .display-stopwatch {
+    .box-stopwatch {
+      width: 355px;
+
+      .time {
+        p {
+          font-size: 65px;
+        }
+      }
     }
   }
 }

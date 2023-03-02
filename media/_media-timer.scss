@@ -1,17 +1,18 @@
 @media (max-width: 430px) {
   .display-timer {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .inputs {
     .input {
-      width: 85px;
-      height: 75px;
+      width: 90px;
+      height: 80px;
+      font-size: 38px;
     }
-    
-  .output-colon {
-    font-size: 45px;
-  }
+
+    .output-colon {
+      font-size: 48px;
+    }
   }
 
   .hms {
@@ -21,14 +22,14 @@
   }
 
   .timer-output {
-    width: 375px;
+    width: 410px;
     height: 165px;
     background: #464C55;
     border: none;
     border-radius: 20px;
 
     .timer-output-time {
-      font-size: 76px;
+      font-size: 80px;
       text-shadow: none;
       color: #E3E3E3;
     }
@@ -45,7 +46,7 @@
     .timer-start {
       font-size: 25px;
       width: 180px;
-      height: 50px;
+      height: 55px;
     }
   }
 
@@ -62,7 +63,7 @@
       font-size: 46px;
       margin-top: 200px;
     }
-    
+
     .done-btn {
       font-size: 23px;
       width: 170px;
@@ -73,7 +74,7 @@
 
 @media (max-width: 390px) {
   .display-timer {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .inputs {
@@ -81,10 +82,10 @@
       width: 85px;
       height: 75px;
     }
-    
-  .output-colon {
-    font-size: 45px;
-  }
+
+    .output-colon {
+      font-size: 45px;
+    }
   }
 
   .hms {
@@ -135,7 +136,90 @@
       font-size: 46px;
       margin-top: 200px;
     }
-    
+
+    .done-btn {
+      font-size: 23px;
+      width: 170px;
+      height: 45px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .timer-output {
+    width: 360px;
+
+    .timer-output-time {
+      font-size: 73px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .display-timer {
+    margin-bottom: 40px;
+  }
+
+  .inputs {
+    .input {
+      width: 85px;
+      height: 75px;
+    }
+
+    .output-colon {
+      font-size: 45px;
+    }
+  }
+
+  .hms {
+    span {
+      font-size: 17px;
+    }
+  }
+
+  .timer-output {
+    width: 355px;
+    height: 160px;
+    background: #464C55;
+    border: none;
+    border-radius: 20px;
+
+    .timer-output-time {
+      font-size: 73px;
+      text-shadow: none;
+      color: #E3E3E3;
+    }
+
+    .colon {
+      font-size: 48px;
+      color: #E3E3E3;
+    }
+  }
+
+  .timer-button {
+    margin-top: 10px;
+
+    .timer-start {
+      font-size: 25px;
+      width: 180px;
+      height: 50px;
+    }
+  }
+
+  .timer-done {
+    width: 375px;
+    height: 90vh;
+    margin-top: 50px;
+
+    img {
+      width: 375px;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin-top: 200px;
+    }
+
     .done-btn {
       font-size: 23px;
       width: 170px;
