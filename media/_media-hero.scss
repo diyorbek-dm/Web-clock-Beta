@@ -1,3 +1,76 @@
+@media (max-width: 390px) {
+  .display-main {
+    margin-top: 80px;
+
+    .media-main-background {
+      display: block;
+      width: 375px;
+      margin-bottom: 70px;
+    }
+
+    .box-main {
+      p {
+        font-size: 50px;
+        font-weight: 600;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+      }
+    }
+
+    .box-info {
+      p {
+        font-size: 26px;
+        color: #959595;
+      }
+    }
+  }
+
+  .media-global-time {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin-top: 50px;
+  }
+
+  .mgt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .global-title {
+      display: flex;
+      flex-direction: column;
+      justify-self: flex-start;
+    }
+
+    h2 {
+      font-family: $font-iniva;
+      font-weight: 500;
+      font-size: 35px;
+    }
+
+    span {
+      font-family: $font-iniva;
+      font-weight: 400;
+      font-size: 17px;
+    }
+
+    .city-name {
+      color: #959595;
+      font-size: 20px;
+    }
+
+    .media-time-span {
+      font-family: $font-iniva;
+      font-weight: 500;
+      font-size: 40px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
 @media (max-width: 320px) {
   .display-main {
     margin-top: 40px;
@@ -10,14 +83,16 @@
 
     .box-main {
       p {
-        font-size: 42px;
+        font-size: 40px;
+        font-weight: 600;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
       }
     }
 
     .box-info {
       p {
         font-size: 22px;
-        color: #C9C9C9;
+        color: #959595;
       }
     }
   }
@@ -50,16 +125,18 @@
       font-family: $font-iniva;
       font-weight: 400;
       font-size: 17px;
-      color: #C9C9C9;
     }
-    
+
+    .city-name {
+      color: #959595;
+    }
+
     .media-time-span {
       font-family: $font-iniva;
       font-weight: 500;
       font-size: 36px;
-      color: white;
     }
-    
+
     &:not(:last-child) {
       margin-bottom: 20px;
     }

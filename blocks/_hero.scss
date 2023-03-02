@@ -13,6 +13,7 @@
 
     p {
       @include font-main;
+      text-shadow: 7px 6px 10px rgba(0, 0, 0, 0.5);
     }
   }
 
@@ -20,7 +21,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-top: 5px;
+    
     p {
       @include font-main-info;
     }

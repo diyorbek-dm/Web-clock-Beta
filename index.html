@@ -23,63 +23,54 @@
     </ul>
   </nav>
 
-  <!-- * Menu Burger -->
-  <div class="mune-burger-box none">
-    <a href="#" class="btn-menu-burger">
-      <img src="./img/header-1.svg" alt="menu">
-    </a>
-  </div>
-
   <!-- * Media Menu Nav -->
   <nav class="media-nav none">
     <ul>
       <li>
-        <img src="./img/icons8-clock.svg" alt="Clock" class="media-nav-clock">
+        <span class="media-item-clock">Clock</span>
       </li>
 
       <li>
-        <span class="none">Timer</span>
+        <span class="media-item-timer none">Timer</span>
       </li>
 
       <li>
-        <span class="none">
+        <span class="media-item-stopwatch none">
           Stopwatch
         </span>
       </li>
-
-      <li>
-        <span class="none">
-          Theme
-        </span>
-      </li>
     </ul>
+
+    <!-- * Menu Burger -->
+    <div class="mune-burger-box none">
+      <a href="#" class="btn-menu-burger">
+        <img src="./img/main-header.svg" alt="menu" class="menu-burger-icon">
+      </a>
+    </div>
   </nav>
 
   <!-- * Menu Burger Container -->
   <div class="menu-container none">
-    <div class="clock menu-item">
+    <div class="menu-item">
       <img src="./img/clock-icon.svg" alt="" class="menu-clock-img">
-      <h2>Clock</h2>
+      <a href="#" class="m-clock menu-item-a">Clock</a>
     </div>
-    <div class="timer menu-item">
+    <div class="menu-item">
       <img src="./img/timer-icon.svg" alt="">
-      <h2>Timer</h2>
+      <a href="#" class="m-timer menu-item-a">Timer</a>
     </div>
-    <div class="stopwatch menu-item">
+    <div class="menu-item">
       <img src="./img/stopwatch-icon.svg" alt="">
-      <h2>Stopwatch</h2>
-    </div>
-    <div class="theme menu-item">
-      <img src="./img/theme-icon.svg" alt="">
-      <h2>Theme</h2>
+      <a href="#" class="m-stopwatch menu-item-a">Stopwatch</a>
     </div>
   </div>
+
 
   <!-- * All Tabs * -->
   <div class="all-tabs">
 
     <!-- Main -->
-    <div class="display-main">
+    <div class="display-main active">
       <img src="./img/world-map.png" alt="" class="media-main-background none">
 
       <div class="box-main">
@@ -101,7 +92,7 @@
         <div class="london mgt">
           <div class="global-title">
             <h2>Pekin</h2>
-            <span>China</span>
+            <span class="city-name">China</span>
           </div>
           <div class="city-time">
             <span class="london-hour media-time-span">22</span>
@@ -112,7 +103,7 @@
         <div class="new-york mgt">
           <div class="global-title">
             <h2>New York</h2>
-            <span>USA</span>
+            <span class="city-name">USA</span>
           </div>
           <div class="city-time">
             <span class="york-hour media-time-span">22</span>
@@ -123,7 +114,7 @@
         <div class="london mgt">
           <div class="global-title">
             <h2>Tokyo</h2>
-            <span>Japan</span>
+            <span class="city-name">Japan</span>
           </div>
           <div class="city-time">
             <span class="tokyo-hour media-time-span">22</span>
@@ -144,11 +135,12 @@
 
       </div>
     </div>
+
     <!-- Timer -->
     <div class="display-timer none">
       <div class="timer-box">
 
-        <div class="timer-output">
+        <div class="timer-output timer-output-active">
           <span class="timer-hour timer-output-time">00</span>
           <span class="colon">&nbsp;:&nbsp;</span>
           <span class="timer-minute timer-output-time">00</span>
@@ -179,9 +171,7 @@
         </div>
 
         <div class="timer-button">
-          <button class="timer-delete timer-btn none">Delete</button>
-          <button class="timer-pause timer-btn none">Pause</button>
-          <button class="timer-start timer-btn">Start</button>
+          <button class="timer-start">Start</button>
         </div>
       </div>
 
@@ -206,17 +196,16 @@
       </div>
 
       <div class="form">
-
-        <div class="reset">
-          <button class="reset-btn stopwatch-buttons">Reset</button>
+        <div class="start form-buttons btn-start-stopwatch">
+          <button class="start-btn btn-active-start stopwatch-buttons">Start</button>
         </div>
 
-        <div class="stop">
+        <div class="stop form-buttons">
           <button class="stop-btn stopwatch-buttons">Stop</button>
         </div>
 
-        <div class="start">
-          <button class="start-btn btn-active-start stopwatch-buttons">Start</button>
+        <div class="reset form-buttons">
+          <button class="reset-btn stopwatch-buttons">Reset</button>
         </div>
 
       </div>

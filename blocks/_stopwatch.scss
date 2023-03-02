@@ -12,24 +12,17 @@
     align-items: center;
     transition: 0.5s ease;
 
-    width: 800px;
-    height: 228px;
-    background: #464C55;
-    border-radius: 30px;
-
     .time {
       display: flex;
 
-      P {
+      p {
         @include font-stopwatch;
+        text-shadow: 7px 6px 10px rgba(0, 0, 0, 0.5);
       }
     }
   }
 }
 
-.output-active {
-  box-shadow: 0px 0px 15px 2px #464C55;
-}
 
 .form {
   display: flex;
@@ -41,19 +34,26 @@
 
 .stopwatch-buttons {
   @include font-stopwatch-start;
-} 
+}
 
-.start {
+.start {  
   button {
     width: 130px;
     height: 50px;
     background: #464C55;
-    box-shadow: 0px 4px 10px 0.5px rgba(70, 76, 85, 0.5);
     border-radius: 16px;
     border: none;
     text-align: center;
-    transition: 0.5s;
   }
+}
+
+.stop-btn.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 100;
+  animation: opa 0.7s linear 1;
 }
 
 .stop {
@@ -61,26 +61,65 @@
   margin-left: 70px;
 
   button {
+    transition: ease 0.3s;
+    opacity: 0;
+
     width: 130px;
     height: 50px;
-    background: #8A4444;
-    box-shadow: 0px 4px 10px 1px rgba(138, 68, 68, 0.5);
+    background: #B74646;
     border-radius: 16px;
     border: none;
     text-align: center;
-    transition: 0.5s;
   }
+}
+
+.reset-btn.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 100;
+  animation: opa 0.7s linear 1;
 }
 
 .reset {
   button {
+    transition: ease 0.3s;
+    opacity: 0;
+
     width: 130px;
     height: 50px;
-    background: #8A4444;
-    box-shadow: 0px 4px 10px 1px rgba(138, 68, 68, 0.5);
+    background: #B74646;
     border-radius: 16px;
     border: none;
     text-align: center;
-    transition: 0.5s;
+  }
+}
+
+@keyframes opa {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes apo {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 0%;
   }
 }

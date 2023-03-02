@@ -2,7 +2,7 @@
 @mixin font-main {
   font-family: $font-iniva;
   font-weight: 500;
-  font-size: 110px;
+  font-size: 120px;
 }
 
 // Main - Info
@@ -29,14 +29,13 @@
 
 // Timer - Input Subtitle (Minutes, Senonds, Hours)
 @mixin font-timer-input-subtitle {
-  color: #B1B1B1;
+  color: #959595;
   font-family: $font-iniva;
   font-weight: 400;
 }
 
 // Timer - Output colon
 @mixin timer-output-colon {
-  color: white;
   font-size: 120px;
   font-family: $font-iniva;
   font-weight: 600;
@@ -44,7 +43,6 @@
 
 // Timer - Output time
 @mixin timer-output-time {
-  color: white;
   font-size: 120px;
   font-family: $font-iniva;
   font-weight: 500;
@@ -79,7 +77,7 @@
 @mixin font-stopwatch {
   font-family: $font-iniva;
   font-weight: 500;
-  font-size: 100px;
+  font-size: 120px;
 }
 
 // Stopwatch - Buttons
@@ -87,13 +85,5 @@
   font-family: $font-iniva;
   font-weight: 500;
   font-size: 22px;
-  color: white;
-}
-
-// Theme
-@mixin font-theme {
-  font-family: $font-iniva;
-  font-weight: 400;
-  font-size: 24px;
   color: white;
 }

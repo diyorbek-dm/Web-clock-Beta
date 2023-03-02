@@ -16,6 +16,8 @@ timerStart.addEventListener('dblclick', () => {
 
 // Start
 timerStart.addEventListener('click', () => {
+  // Beauti
+  const beauti = document.querySelectorAll('.output-colon')
 
   // * Input
   let uSec = document.querySelector('.timer-seconds').value,
@@ -35,20 +37,23 @@ timerStart.addEventListener('click', () => {
   // * Ckech empty / Check correct time
   if (uSec == '' && uMin == '' && uHour == '') {
     clearInterval(inTimer)
-    timerStart.style = 'background-color: #8B2E2E; box-shadow: 0px 4px 10px 0.5px #8B2E2E;'
+    timerStart.classList.add('error')
   } else if (s > 60 || s < 0 || m > 60 || m < 0 || h > 24 || h < 0) {
     inTimer = clearInterval(inTimer)
     alert('Please, enter correct time!')
-    timerStart.style = 'background-color: #8B2E2E; box-shadow: 0px 4px 10px 0.5px #8B2E2E;'
+    timerStart.classList.add('error')
   } else if (tStart.innerHTML == 'Start') {
     tStart.innerHTML = 'Clear'
 
-    timerStart.style = 'background-color: #8A4444;'
+    beauti.forEach(elem => {
+      elem.style = 'animation: opacity 1.7s linear infinite;'
+    })
+    
+    timerStart.classList.add('clear')
     startStopwatch()
   } else if (tStart.innerHTML == 'Clear') {
     tStart.innerHTML = 'Start'
 
-    timerStart.style = 'background-color: #464C55;'
     clearStopwatch()
   }
 
@@ -69,10 +74,10 @@ timerStart.addEventListener('click', () => {
     // * Timer Interval
     inTimer = setInterval(() => {
       // Beauti
-      const beauti = document.querySelectorAll('.output-colon')
-      beauti.forEach(elem => {
-        elem.style = 'animation: opacity 1.7s linear infinite;'
-      })
+      // const beauti = document.querySelectorAll('.output-colon')
+      // beauti.forEach(elem => {
+      //   elem.style = 'animation: opacity 1.7s linear infinite;'
+      // })
 
       // ** Main code
       if (s != 0) {
@@ -81,7 +86,8 @@ timerStart.addEventListener('click', () => {
         s = 59
         m--
       } else if (m == 0 && h != 0) {
-        m = 60
+        m = 59
+        s = 59
         h--
       } else if (m != 0 && s == 0) {
         s = 0
@@ -122,7 +128,9 @@ timerStart.addEventListener('click', () => {
           elem.style = 'animation: none;'
         })
 
-        timerStart.style = 'background-color: #464C55;'
+        timerStart.classList.remove('clear')
+        timerStart.classList.remove('error')
+        timerStart.innerHTML = 'Start'
       }
 
       // * Output
@@ -134,14 +142,25 @@ timerStart.addEventListener('click', () => {
 
   // * Clear Stopwatch
   function clearStopwatch() {
+    clearInterval(inTimer)
+    timerStart.classList.remove('clear')
+    timerStart.classList.remove('error')
+
     s = 0
     m = 0
     h = 0
 
-    outSec.innerHTML = s.toString().padStart(2, '0')
-    outMin.innerHTML = m.toString().padStart(2, '0')
-    outHour.innerHTML = h.toString().padStart(2, '0')
+    // * Delete Beauti
+    beauti.forEach(elem => {
+      elem.style = 'animation: none;'
+    })
 
-    clearInterval(inTimer)
+    outSec.innerHTML = '00'
+    outMin.innerHTML = '00'
+    outHour.innerHTML = '00'
+
+    // outSec.innerHTML = s.toString().padStart(2, '0')
+    // outMin.innerHTML = m.toString().padStart(2, '0')
+    // outHour.innerHTML = h.toString().padStart(2, '0')
   }
 })

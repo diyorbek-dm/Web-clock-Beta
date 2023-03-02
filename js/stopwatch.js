@@ -62,8 +62,12 @@ function check() {
 }
 
 start.addEventListener('click', () => {
-  output.classList.add('output-active')
+  // Form
+  document.querySelector('.form ').classList.add('active')
+
   start.classList.add('btn-active-start')
+  stop.classList.add('active')
+  reset.classList.add('active')
 
   interval = setInterval(() => {
     check()
@@ -80,7 +84,6 @@ start.addEventListener('dblclick', () => {
 })
 
 stop.addEventListener('click', () => {
-  output.classList.remove('output-active')
 
   if (hrs == 0 && min == 0 && sec == 0) {
     hour.innerHTML = `00 :&nbsp;`
@@ -97,9 +100,13 @@ stop.addEventListener('click', () => {
 
 reset.addEventListener('click', () => {
   output.classList.remove('output-active')
+
   sec = 0
   min = 0
   hrs = 0
+
+  reset.classList.remove('active')
+  stop.classList.remove('active')
 
   hour.innerHTML = `00 :&nbsp;`
   minutes.innerHTML = `00 :&nbsp;`
