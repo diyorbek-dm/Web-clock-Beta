@@ -189,6 +189,7 @@ setInterval(() => {
     mDay.innerHTML = `${day}.`
   }
 
+  // Not Change
   mWDay.innerHTML = `${week[wDay]} &nbsp;`
   mYear.innerHTML = `${year}`
 })
