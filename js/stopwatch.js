@@ -74,7 +74,7 @@ start.addEventListener('click', () => {
 
     hour.innerHTML = `${hrs} :&nbsp;`
     minutes.innerHTML = `${min} :&nbsp;`
-    seconds.innerHTML = `${sec}&nbsp;`
+    seconds.innerHTML = `${sec}`
   }, 1000);
 })
 
@@ -88,11 +88,11 @@ stop.addEventListener('click', () => {
   if (hrs == 0 && min == 0 && sec == 0) {
     hour.innerHTML = `00 :&nbsp;`
     minutes.innerHTML = `00 :&nbsp;`
-    seconds.innerHTML = `00&nbsp;`
+    seconds.innerHTML = `00`
   } else {
     hour.innerHTML = `${hrs} :&nbsp;`
     minutes.innerHTML = `${min} :&nbsp;`
-    seconds.innerHTML = `${sec}&nbsp;`
+    seconds.innerHTML = `${sec}`
   }
 
   clearInterval(interval)
@@ -110,7 +110,7 @@ reset.addEventListener('click', () => {
 
   hour.innerHTML = `00 :&nbsp;`
   minutes.innerHTML = `00 :&nbsp;`
-  seconds.innerHTML = `00&nbsp;`
+  seconds.innerHTML = `00`
 
   clearInterval(interval)
 })
