@@ -177,8 +177,18 @@ setInterval(() => {
     mSecond.innerHTML = `${second}&nbsp;`
   }
 
+  if(month < 10) {
+    mMonth.innerHTML = `0${month}.`
+  } else {
+    mMonth.innerHTML = `${month}.`
+  }
+
+  if(day < 10) {
+    mDay.innerHTML = `0${day}.`
+  } else {
+    mDay.innerHTML = `${day}.`
+  }
+
   mWDay.innerHTML = `${week[wDay]} &nbsp;`
-  mMonth.innerHTML = `${month}.`
-  mDay.innerHTML = `${day}.`
   mYear.innerHTML = `${year}`
 })
