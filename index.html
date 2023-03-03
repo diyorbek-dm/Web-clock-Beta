@@ -70,7 +70,7 @@
   <div class="all-tabs">
 
     <!-- Main -->
-    <div class="display-main active">
+    <div class="display-main none">
       <img src="./img/world-map.png" alt="" class="media-main-background none">
 
       <div class="box-main">
@@ -148,7 +148,10 @@
           <span class="timer-second timer-output-time">00</span>
         </div>
 
-        <div class="inputs">
+        <!-- Empty -->
+        <span class="empty-value"></span>
+
+        <div class=" inputs">
 
           <div class="hms">
             <input type="number" class="timer-hours input" placeholder="00">
@@ -176,7 +179,8 @@
       </div>
 
       <div class="timer-done none">
-        <img src="https://i.pinimg.com/originals/09/aa/0f/09aa0f6d2d73d1c0d8ac950b5a43456e.gif" alt="">
+        <img src="https://i.pinimg.com/originals/09/aa/0f/09aa0f6d2d73d1c0d8ac950b5a43456e.gif" alt=""
+          class="done-alarm">
         <h1>Time is over</h1>
         <button class="done-btn">Close</button>
         <audio src="./img/iphonetimer_i4r34e44.mp3" class="audio"></audio>
@@ -185,7 +189,7 @@
     </div>
 
     <!-- Stopwatch -->
-    <div class="display-stopwatch none">
+    <div class="display-stopwatch active">
 
       <div class="box-stopwatch">
         <div class="time">
@@ -193,6 +197,7 @@
           <p class="minutes">00 :&nbsp;</p>
           <p class="seconds">00</p>
         </div>
+        <span class="miliseconds">.00</span>
       </div>
 
       <div class="form">
@@ -200,18 +205,12 @@
           <button class="start-btn btn-active-start stopwatch-buttons">Start</button>
         </div>
 
-        <div class="stop form-buttons">
-          <button class="stop-btn stopwatch-buttons">Stop</button>
-        </div>
-
         <div class="reset form-buttons">
           <button class="reset-btn stopwatch-buttons">Reset</button>
         </div>
-
       </div>
 
     </div>
-
   </div>
 
   <script src="./js/main.js"></script>

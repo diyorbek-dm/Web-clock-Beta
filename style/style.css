@@ -58,6 +58,20 @@ input {
   border: none;
 }
 
+.empty-value.empty {
+  display: inline;
+}
+
+.empty-value {
+  display: none;
+  position: absolute;
+  padding-bottom: 15px;
+  font-family: "Univa Nova", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #B74646;
+}
+
 .display-timer {
   margin-top: 70px;
 }
@@ -133,6 +147,7 @@ input {
   font-size: 120px;
   font-family: "Univa Nova", sans-serif;
   font-weight: 600;
+  text-shadow: 7px 6px 10px rgba(0, 0, 0, 0.5);
 }
 .timer-output .timer-output-time {
   font-size: 120px;
@@ -152,9 +167,13 @@ input {
   font-weight: bold;
   margin-bottom: 25px;
 }
+.inputs .input.empty {
+  border: 3px solid #B74646;
+}
 .inputs .input {
   display: flex;
   text-align: center;
+  transition: 0.5s;
   color: white;
   font-size: 30px;
   font-family: "Univa Nova", sans-serif;
@@ -216,9 +235,7 @@ input {
 }
 .display-stopwatch .box-stopwatch {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   transition: 0.5s ease;
 }
 .display-stopwatch .box-stopwatch .time {
@@ -229,6 +246,13 @@ input {
   font-weight: 500;
   font-size: 120px;
   text-shadow: 7px 6px 10px rgba(0, 0, 0, 0.5);
+}
+.display-stopwatch .box-stopwatch .miliseconds {
+  font-size: 45px;
+  font-family: "Univa Nova", sans-serif;
+  font-weight: 500;
+  padding-bottom: 15px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .form {
@@ -245,7 +269,11 @@ input {
   color: white;
 }
 
-.start button {
+.start {
+  margin-right: 30px;
+}
+
+.start-btn {
   width: 130px;
   height: 50px;
   background: #464C55;
@@ -254,21 +282,13 @@ input {
   text-align: center;
 }
 
-.stop-btn.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 100;
-  animation: opa 0.7s linear 1;
+.reset-btn.abb {
+  opacity: 100%;
 }
 
-.stop {
-  margin-right: 70px;
-  margin-left: 70px;
-}
-.stop button {
-  transition: ease 0.3s;
-  opacity: 0;
+.reset-btn {
+  opacity: 30%;
+  transition: 0.5s;
   width: 130px;
   height: 50px;
   background: #B74646;
@@ -277,47 +297,6 @@ input {
   text-align: center;
 }
 
-.reset-btn.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 100;
-  animation: opa 0.7s linear 1;
-}
-
-.reset button {
-  transition: ease 0.3s;
-  opacity: 0;
-  width: 130px;
-  height: 50px;
-  background: #B74646;
-  border-radius: 16px;
-  border: none;
-  text-align: center;
-}
-
-@keyframes opa {
-  0% {
-    opacity: 0%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@keyframes apo {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
 .display-main {
   display: flex;
   flex-direction: column;
@@ -485,6 +464,11 @@ input {
     margin-bottom: 40px;
     margin-top: 160px;
   }
+  .empty-value {
+    padding-bottom: 50px;
+    font-size: 18px;
+    z-index: -999;
+  }
   .timer-output {
     margin-bottom: 40px;
   }
@@ -522,13 +506,13 @@ input {
     height: 320px;
     margin-bottom: 90px;
   }
-  .timer-done img {
-    display: none;
-  }
   .timer-done h1 {
     font-size: 50px;
     margin-top: 0px;
     margin-bottom: 20px;
+  }
+  .timer-done img {
+    display: none;
   }
   .timer-done .done-btn {
     font-size: 20px;
@@ -540,6 +524,11 @@ input {
   .display-timer {
     margin-bottom: 40px;
     margin-top: 160px;
+  }
+  .empty-value {
+    padding-bottom: 50px;
+    font-size: 18px;
+    z-index: -999;
   }
   .timer-output {
     margin-bottom: 40px;
@@ -597,6 +586,11 @@ input {
     margin-bottom: 40px;
     margin-top: 160px;
   }
+  .empty-value {
+    padding-bottom: 50px;
+    font-size: 18px;
+    z-index: -999;
+  }
   .timer-output {
     margin-bottom: 40px;
   }
@@ -631,8 +625,8 @@ input {
   }
   .timer-done {
     width: 700px;
-    height: 220px;
-    margin-bottom: 120px;
+    height: 250px;
+    margin-bottom: 160px;
   }
   .timer-done img {
     display: none;
@@ -650,7 +644,14 @@ input {
 }
 @media (max-width: 430px) {
   .display-timer {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+  }
+  .empty-value {
+    padding-bottom: 40px;
+    font-size: 25px;
+  }
+  .inputs {
+    margin-top: 10px;
   }
   .inputs .input {
     width: 90px;
@@ -680,19 +681,22 @@ input {
     color: #E3E3E3;
   }
   .timer-button {
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .timer-button .timer-start {
     font-size: 25px;
     width: 180px;
     height: 55px;
+    margin-top: 10px;
   }
   .timer-done {
     width: 375px;
     height: 90vh;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   .timer-done img {
+    display: inline;
     width: 375px;
   }
   .timer-done h1 {
@@ -707,7 +711,14 @@ input {
 }
 @media (max-width: 390px) {
   .display-timer {
-    margin-bottom: 40px;
+    margin-bottom: 150px;
+  }
+  .empty-value {
+    padding-bottom: 32px;
+    font-size: 25px;
+  }
+  .inputs {
+    margin-top: 15px;
   }
   .inputs .input {
     width: 85px;
@@ -742,13 +753,16 @@ input {
     font-size: 25px;
     width: 180px;
     height: 50px;
+    margin-top: 10px;
   }
   .timer-done {
     width: 375px;
     height: 90vh;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   .timer-done img {
+    display: inline;
     width: 375px;
   }
   .timer-done h1 {
@@ -768,10 +782,37 @@ input {
   .timer-output .timer-output-time {
     font-size: 73px;
   }
+  .empty-value {
+    padding-bottom: 35px;
+    font-size: 23px;
+  }
+  .timer-start {
+    margin-top: 10px;
+  }
+  .input {
+    margin-top: 10px;
+  }
+  .timer-done {
+    width: 350px;
+    height: 90vh;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .timer-done img {
+    display: inline;
+    width: 350px;
+  }
 }
 @media (max-width: 370px) {
   .display-timer {
-    margin-bottom: 40px;
+    margin-bottom: 200px;
+  }
+  .empty-value {
+    padding-bottom: 35px;
+    font-size: 23px;
+  }
+  .inputs {
+    margin-top: 15px;
   }
   .inputs .input {
     width: 85px;
@@ -806,13 +847,16 @@ input {
     font-size: 25px;
     width: 180px;
     height: 50px;
+    margin-top: 15px;
   }
   .timer-done {
     width: 375px;
     height: 90vh;
     margin-top: 50px;
+    margin-bottom: 0px;
   }
   .timer-done img {
+    display: inline;
     width: 375px;
   }
   .timer-done h1 {
@@ -827,10 +871,17 @@ input {
 }
 @media (max-width: 320px) {
   .display-timer {
-    margin-bottom: 100px;
+    margin-bottom: 140px;
+  }
+  .empty-value {
+    padding-bottom: 33px;
+    font-size: 23px;
   }
   .inputs .input {
     width: 73px;
+  }
+  .hms span {
+    font-size: 15px;
   }
   .timer-output {
     width: 300px;
@@ -852,12 +903,17 @@ input {
     width: 170px;
     height: 50px;
   }
+  .timer-button .timer-start {
+    margin-top: 15px;
+  }
   .timer-done {
     width: 300px;
     height: 90vh;
-    margin-top: 150px;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   .timer-done img {
+    display: inline;
     width: 300px;
   }
   .timer-done h1 {
@@ -903,9 +959,12 @@ input {
 }
 @media (max-width: 430px) {
   .display-stopwatch {
-    margin-top: 40px;
+    margin-bottom: 100px;
   }
   .display-stopwatch .box-stopwatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 410px;
     height: 165px;
     background: #464C55;
@@ -913,9 +972,18 @@ input {
     border-radius: 20px;
   }
   .display-stopwatch .box-stopwatch .time p {
-    font-size: 75px;
+    font-size: 66px;
     text-shadow: none;
     color: #E3E3E3;
+  }
+  .display-stopwatch .box-stopwatch .miliseconds {
+    font-size: 25px;
+    padding-top: 35px;
+    text-shadow: none;
+    color: #E3E3E3;
+  }
+  .start {
+    margin-right: 0px;
   }
   .output-active {
     box-shadow: none;
@@ -938,9 +1006,12 @@ input {
 }
 @media (max-width: 390px) {
   .display-stopwatch {
-    margin-top: 40px;
+    margin-bottom: 100px;
   }
   .display-stopwatch .box-stopwatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 375px;
     height: 165px;
     background: #464C55;
@@ -948,7 +1019,13 @@ input {
     border-radius: 20px;
   }
   .display-stopwatch .box-stopwatch .time p {
-    font-size: 68px;
+    font-size: 62px;
+    text-shadow: none;
+    color: #E3E3E3;
+  }
+  .display-stopwatch .box-stopwatch .miliseconds {
+    font-size: 25px;
+    padding-top: 35px;
     text-shadow: none;
     color: #E3E3E3;
   }
@@ -970,25 +1047,58 @@ input {
     width: 180px;
     height: 50px;
   }
+  .start {
+    margin-right: 0px;
+  }
 }
 @media (max-width: 375px) {
+  .display-stopwatch {
+    margin-bottom: 150px;
+  }
   .display-stopwatch .box-stopwatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 360px;
   }
   .display-stopwatch .box-stopwatch .time p {
-    font-size: 66px;
+    font-size: 60px;
+  }
+  .display-stopwatch .box-stopwatch .miliseconds {
+    font-size: 25px;
+    padding-top: 35px;
+    text-shadow: none;
+    color: #E3E3E3;
+  }
+  .start {
+    margin-right: 0px;
   }
 }
 @media (max-width: 370px) {
   .display-stopwatch .box-stopwatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 355px;
   }
   .display-stopwatch .box-stopwatch .time p {
-    font-size: 65px;
+    font-size: 58px;
+  }
+  .display-stopwatch .box-stopwatch .miliseconds {
+    font-size: 25px;
+    padding-top: 35px;
+    text-shadow: none;
+    color: #E3E3E3;
+  }
+  .start {
+    margin-right: 0px;
   }
 }
 @media (max-width: 320px) {
   .display-stopwatch .box-stopwatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 300px;
     height: 165px;
     background: #464C55;
@@ -996,9 +1106,18 @@ input {
     border-radius: 20px;
   }
   .display-stopwatch .box-stopwatch .time p {
-    font-size: 54px;
+    font-size: 48px;
     text-shadow: none;
     color: #E3E3E3;
+  }
+  .display-stopwatch .box-stopwatch .miliseconds {
+    font-size: 25px;
+    padding-top: 35px;
+    text-shadow: none;
+    color: #E3E3E3;
+  }
+  .start {
+    margin-right: 30px;
   }
   .output-active {
     box-shadow: none;
@@ -1274,9 +1393,19 @@ input {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 932px) {
+  .nav-main {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 844px) {
+  .nav-main {
+    margin-top: 35px;
+  }
+}
 @media (max-width: 769px) {
   .nav-main {
-    margin-top: 25px;
+    margin-top: 35px;
   }
 }
 @media (max-width: 430px) {

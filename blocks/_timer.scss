@@ -9,6 +9,21 @@ input {
   border: none;
 }
 
+.empty-value.empty {
+  display: inline;
+}
+
+.empty-value {
+  display: none;
+
+  position: absolute;
+  padding-bottom: 15px;
+  font-family: $font-iniva;
+  font-size: 20px;
+  font-weight: 500;
+  color: #B74646;
+}
+
 .display-timer {
   margin-top: 70px;
 }
@@ -81,15 +96,13 @@ input {
 
   .colon {
     @include timer-output-colon;
-
+    text-shadow: 7px 6px 10px rgba(0, 0, 0, 0.5);
   }
 
   .timer-output-time {
     @include timer-output-time;
     text-shadow: 7px 6px 10px rgba(0, 0, 0, 0.5);
-
   }
-
 }
 
 .inputs {
@@ -103,9 +116,14 @@ input {
     margin-bottom: 25px;
   }
 
+  .input.empty {
+    border: 3px solid #B74646;
+  }
+
   .input {
     display: flex;
     text-align: center;
+    transition: 0.5s;
 
     @include font-timer-input;
     width: 80px;

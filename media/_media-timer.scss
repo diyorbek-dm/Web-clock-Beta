@@ -4,6 +4,12 @@
     margin-top: 160px;
   }
 
+  .empty-value {
+    padding-bottom: 50px;
+    font-size: 18px;
+    z-index: -999;
+  }
+
   .timer-output {
     margin-bottom: 40px;
 
@@ -52,14 +58,14 @@
     height: 320px;
     margin-bottom: 90px;
 
-    img {
-      display: none;
-    }
-
     h1 {
       font-size: 50px;
       margin-top: 0px;
       margin-bottom: 20px;
+    }
+
+    img {
+      display: none;
     }
 
     .done-btn {
@@ -74,6 +80,12 @@
   .display-timer {
     margin-bottom: 40px;
     margin-top: 160px;
+  }
+
+  .empty-value {
+    padding-bottom: 50px;
+    font-size: 18px;
+    z-index: -999;
   }
 
   .timer-output {
@@ -148,6 +160,12 @@
     margin-top: 160px;
   }
 
+  .empty-value {
+    padding-bottom: 50px;
+    font-size: 18px;
+    z-index: -999;
+  }
+
   .timer-output {
     margin-bottom: 40px;
 
@@ -193,8 +211,8 @@
 
   .timer-done {
     width: 700px;
-    height: 220px;
-    margin-bottom: 120px;
+    height: 250px;
+    margin-bottom: 160px;
 
     img {
       display: none;
@@ -216,10 +234,17 @@
 
 @media (max-width: 430px) {
   .display-timer {
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+  }
+
+  .empty-value {
+    padding-bottom: 40px;
+    font-size: 25px;
   }
 
   .inputs {
+    margin-top: 10px;
+
     .input {
       width: 90px;
       height: 80px;
@@ -257,21 +282,24 @@
   }
 
   .timer-button {
-    margin-top: 15px;
+    margin-top: 20px;
 
     .timer-start {
       font-size: 25px;
       width: 180px;
       height: 55px;
+      margin-top: 10px;
     }
   }
 
   .timer-done {
     width: 375px;
     height: 90vh;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 
     img {
+      display: inline;
       width: 375px;
     }
 
@@ -290,10 +318,17 @@
 
 @media (max-width: 390px) {
   .display-timer {
-    margin-bottom: 40px;
+    margin-bottom: 150px;
+  }
+
+  .empty-value {
+    padding-bottom: 32px;
+    font-size: 25px;
   }
 
   .inputs {
+    margin-top: 15px;
+
     .input {
       width: 85px;
       height: 75px;
@@ -336,15 +371,18 @@
       font-size: 25px;
       width: 180px;
       height: 50px;
+      margin-top: 10px;
     }
   }
 
   .timer-done {
     width: 375px;
     height: 90vh;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 
     img {
+      display: inline;
       width: 375px;
     }
 
@@ -369,14 +407,47 @@
       font-size: 73px;
     }
   }
+
+  .empty-value {
+    padding-bottom: 35px;
+    font-size: 23px;
+  }
+
+  .timer-start {
+    margin-top: 10px;
+  }
+
+  .input {
+    margin-top: 10px;
+  }
+
+  .timer-done {
+    width: 350px;
+    height: 90vh;
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+    img {
+      display: inline;
+      width: 350px;
+    }
+  }
 }
 
 @media (max-width: 370px) {
   .display-timer {
-    margin-bottom: 40px;
+    margin-bottom: 200px;
+  }
+
+  .empty-value {
+    padding-bottom: 35px;
+    font-size: 23px;
   }
 
   .inputs {
+    margin-top: 15px;
+
     .input {
       width: 85px;
       height: 75px;
@@ -419,6 +490,7 @@
       font-size: 25px;
       width: 180px;
       height: 50px;
+      margin-top: 15px;
     }
   }
 
@@ -426,8 +498,10 @@
     width: 375px;
     height: 90vh;
     margin-top: 50px;
+    margin-bottom: 0px;
 
     img {
+      display: inline;
       width: 375px;
     }
 
@@ -446,12 +520,23 @@
 
 @media (max-width: 320px) {
   .display-timer {
-    margin-bottom: 100px;
+    margin-bottom: 140px;
+  }
+
+  .empty-value {
+    padding-bottom: 33px;
+    font-size: 23px;
   }
 
   .inputs {
     .input {
       width: 73px;
+    }
+  }
+
+  .hms {
+    span {
+      font-size: 15px;
     }
   }
 
@@ -474,19 +559,26 @@
     }
   }
 
+
   .timer-button {
     .timer-btn {
       width: 170px;
       height: 50px
+    }
+
+    .timer-start {
+      margin-top: 15px;
     }
   }
 
   .timer-done {
     width: 300px;
     height: 90vh;
-    margin-top: 150px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 
     img {
+      display: inline;
       width: 300px;
     }
 

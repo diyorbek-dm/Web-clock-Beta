@@ -9,15 +9,14 @@ const tStart = document.querySelector('.timer-start')
 // Interval
 let inTimer
 
-timerStart.addEventListener('dblclick', () => {
-  alert('Timer already started!')
-  alert('Restart site')
-})
-
 // Start
 timerStart.addEventListener('click', () => {
   // Beauti
   const beauti = document.querySelectorAll('.output-colon')
+
+  // * Empty Inputs
+  const emptyText = document.querySelector('.empty-value'),
+    inputsBorder = document.querySelectorAll('.input')
 
   // * Input
   let uSec = document.querySelector('.timer-seconds').value,
@@ -38,17 +37,44 @@ timerStart.addEventListener('click', () => {
   if (uSec == '' && uMin == '' && uHour == '') {
     clearInterval(inTimer)
     timerStart.classList.add('error')
+    emptyText.classList.add('active')
+    emptyText.innerHTML = 'Please, write time!'
+
+    // Border All
+    inputsBorder.forEach(elem => {
+      elem.classList.add('empty')
+    })
   } else if (s > 60 || s < 0 || m > 60 || m < 0 || h > 24 || h < 0) {
     inTimer = clearInterval(inTimer)
-    alert('Please, enter correct time!')
+
+    // Empty
+    emptyText.classList.add('active')
+    emptyText.innerHTML = 'Please, write correct time!'
     timerStart.classList.add('error')
+
+    // Border All
+    inputsBorder.forEach(elem => {
+      elem.classList.add('empty')
+      elem.value = ''
+    })
+
   } else if (tStart.innerHTML == 'Start') {
     tStart.innerHTML = 'Clear'
+
+    // Empty
+    emptyText.classList.remove('active')
+    emptyText.innerHTML = ''
+    timerStart.classList.remove('error')
+
+    // Border All
+    inputsBorder.forEach(elem => {
+      elem.classList.remove('empty')
+    })
 
     beauti.forEach(elem => {
       elem.style = 'animation: opacity 1.7s linear infinite;'
     })
-    
+
     timerStart.classList.add('clear')
     startStopwatch()
   } else if (tStart.innerHTML == 'Clear') {
@@ -73,11 +99,6 @@ timerStart.addEventListener('click', () => {
 
     // * Timer Interval
     inTimer = setInterval(() => {
-      // Beauti
-      // const beauti = document.querySelectorAll('.output-colon')
-      // beauti.forEach(elem => {
-      //   elem.style = 'animation: opacity 1.7s linear infinite;'
-      // })
 
       // ** Main code
       if (s != 0) {
@@ -97,6 +118,10 @@ timerStart.addEventListener('click', () => {
         }
       } else if (s == 0 && m == 0 && h == 0) {
         clearInterval(inTimer)
+
+        inputsBorder.forEach(elem => {
+          elem.value = ''
+        })
 
         // * Done box
         const doneBox = document.querySelector('.timer-done')
@@ -155,12 +180,12 @@ timerStart.addEventListener('click', () => {
       elem.style = 'animation: none;'
     })
 
+    inputsBorder.forEach(elem => {
+      elem.value = ''
+    })
+
     outSec.innerHTML = '00'
     outMin.innerHTML = '00'
     outHour.innerHTML = '00'
-
-    // outSec.innerHTML = s.toString().padStart(2, '0')
-    // outMin.innerHTML = m.toString().padStart(2, '0')
-    // outHour.innerHTML = h.toString().padStart(2, '0')
   }
 })

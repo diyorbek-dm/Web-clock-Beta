@@ -7,9 +7,7 @@
 
   .box-stopwatch {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     transition: 0.5s ease;
 
     .time {
@@ -20,9 +18,16 @@
         text-shadow: 7px 6px 10px rgba(0, 0, 0, 0.5);
       }
     }
+
+    .miliseconds {
+      font-size: 45px;
+      font-family: $font-iniva;
+      font-weight: 500;
+      padding-bottom: 15px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    }
   }
 }
-
 
 .form {
   display: flex;
@@ -36,90 +41,30 @@
   @include font-stopwatch-start;
 }
 
-.start {  
-  button {
-    width: 130px;
-    height: 50px;
-    background: #464C55;
-    border-radius: 16px;
-    border: none;
-    text-align: center;
-  }
+.start {
+  margin-right: 30px;
 }
 
-.stop-btn.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  opacity: 100;
-  animation: opa 0.7s linear 1;
+.start-btn {
+  width: 130px;
+  height: 50px;
+  background: #464C55;
+  border-radius: 16px;
+  border: none;
+  text-align: center;
 }
 
-.stop {
-  margin-right: 70px;
-  margin-left: 70px;
-
-  button {
-    transition: ease 0.3s;
-    opacity: 0;
-
-    width: 130px;
-    height: 50px;
-    background: #B74646;
-    border-radius: 16px;
-    border: none;
-    text-align: center;
-  }
+.reset-btn.abb {
+  opacity: 100%;
 }
 
-.reset-btn.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  opacity: 100;
-  animation: opa 0.7s linear 1;
-}
-
-.reset {
-  button {
-    transition: ease 0.3s;
-    opacity: 0;
-
-    width: 130px;
-    height: 50px;
-    background: #B74646;
-    border-radius: 16px;
-    border: none;
-    text-align: center;
-  }
-}
-
-@keyframes opa {
-  0% {
-    opacity: 0%;
-  }
-
-  50% {
-    opacity: 50%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes apo {
-  0% {
-    opacity: 100%;
-  }
-
-  50% {
-    opacity: 50%;
-  }
-
-  100% {
-    opacity: 0%;
-  }
+.reset-btn {
+  opacity: 30%;
+  transition: 0.5s;
+  width: 130px;
+  height: 50px;
+  background: #B74646;
+  border-radius: 16px;
+  border: none;
+  text-align: center;
 }

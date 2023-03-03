@@ -1,7 +1,7 @@
 @media (max-width: 932px) {
   .display-stopwatch {
     margin-top: 40px;
-    
+
     .box-stopwatch {
 
       .time {
@@ -10,7 +10,7 @@
         }
       }
     }
-    
+
     .form {
       margin-top: 40px;
     }
@@ -20,7 +20,7 @@
 @media (max-width: 844px) {
   .display-stopwatch {
     margin-top: 40px;
-    
+
     .box-stopwatch {
 
       .time {
@@ -29,7 +29,7 @@
         }
       }
     }
-    
+
     .form {
       margin-top: 40px;
     }
@@ -39,7 +39,7 @@
 @media (max-width: 769px) {
   .display-stopwatch {
     margin-top: 40px;
-    
+
     .box-stopwatch {
       border-radius: 20px;
 
@@ -49,7 +49,7 @@
         }
       }
     }
-    
+
     .form {
       margin-top: 40px;
     }
@@ -58,9 +58,13 @@
 
 @media (max-width: 430px) {
   .display-stopwatch {
-    margin-top: 40px;
+    margin-bottom: 100px;
 
     .box-stopwatch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       width: 410px;
       height: 165px;
       background: #464C55;
@@ -69,12 +73,23 @@
 
       .time {
         p {
-          font-size: 75px;
+          font-size: 66px;
           text-shadow: none;
           color: #E3E3E3;
         }
       }
+      
+      .miliseconds {
+        font-size: 25px;
+        padding-top: 35px;
+        text-shadow: none;
+        color: #E3E3E3;
+      }
     }
+  }
+
+  .start {
+    margin-right: 0px;
   }
 
   .output-active {
@@ -105,9 +120,13 @@
 
 @media (max-width: 390px) {
   .display-stopwatch {
-    margin-top: 40px;
+    margin-bottom: 100px;
 
     .box-stopwatch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       width: 375px;
       height: 165px;
       background: #464C55;
@@ -116,10 +135,17 @@
 
       .time {
         p {
-          font-size: 68px;
+          font-size: 62px;
           text-shadow: none;
           color: #E3E3E3;
         }
+      }
+      
+      .miliseconds {
+        font-size: 25px;
+        padding-top: 35px;
+        text-shadow: none;
+        color: #E3E3E3;
       }
     }
   }
@@ -148,39 +174,77 @@
       height: 50px;
     }
   }
+
+  .start {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 375px) {
   .display-stopwatch {
+    margin-bottom: 150px;
+
     .box-stopwatch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 360px;
-      
+
       .time {
         p {
-          font-size: 66px;
+          font-size: 60px;
         }
       }
+
+      .miliseconds {
+        font-size: 25px;
+        padding-top: 35px;
+        text-shadow: none;
+        color: #E3E3E3;
+      }
     }
+  }
+
+  .start {
+    margin-right: 0px;
   }
 }
 
 @media (max-width: 370px) {
   .display-stopwatch {
     .box-stopwatch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 355px;
 
       .time {
         p {
-          font-size: 65px;
+          font-size: 58px;
         }
       }
+
+      .miliseconds {
+        font-size: 25px;
+        padding-top: 35px;
+        text-shadow: none;
+        color: #E3E3E3;
+      }
     }
+  }
+
+  .start {
+    margin-right: 0px;
   }
 }
 
 @media (max-width: 320px) {
   .display-stopwatch {
     .box-stopwatch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       width: 300px;
       height: 165px;
       background: #464C55;
@@ -189,13 +253,25 @@
 
       .time {
         p {
-          font-size: 54px;
+          font-size: 48px;
           text-shadow: none;
           color: #E3E3E3;
         }
       }
+
+      .miliseconds {
+        font-size: 25px;
+        padding-top: 35px;
+        text-shadow: none;
+        color: #E3E3E3;
+      }
     }
   }
+
+  .start {
+    margin-right: 30px;
+  }
+
 
   .output-active {
     box-shadow: none;
