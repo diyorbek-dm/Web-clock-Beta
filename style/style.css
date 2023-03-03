@@ -283,15 +283,14 @@ input {
 }
 
 .reset-btn.abb {
-  opacity: 100%;
+  background: #B74646;
 }
 
 .reset-btn {
-  opacity: 30%;
   transition: 0.5s;
   width: 130px;
   height: 50px;
-  background: #B74646;
+  background: rgba(173, 98, 98, 0.5803921569);
   border-radius: 16px;
   border: none;
   text-align: center;
