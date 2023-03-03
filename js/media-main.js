@@ -87,21 +87,6 @@ setInterval(() => {
   }
 }, 1000);
 
-// Menu Burger
-const container = document.querySelector('.menu-container')
-const menuBurgerBtn = document.querySelector('.btn-menu-burger')
-
-// Mene Burger Swap
-document.addEventListener('click', event => {
-  const clickCon = event.composedPath().includes(menuBurgerBtn)
-  const clickBur = event.composedPath().includes(menuBurgerBtn)
-
-  if (!clickCon || !clickBur) {
-    container.classList.remove('active')
-  } else {
-    container.classList.toggle('active')
-  }
-})
 
 // Menu Burger Swap
 const bClock = document.querySelector('.m-clock'),
@@ -119,13 +104,35 @@ const iClock = document.querySelector('.media-item-clock'),
   iTimer = document.querySelector('.media-item-timer'),
   iStopwatch = document.querySelector('.media-item-stopwatch')
 
+// Menu Burger
+const container = document.querySelector('.menu-container')
+const menuBurgerBtn = document.querySelector('.btn-menu-burger')
+
+// Mene Burger Swap
+document.addEventListener('click', event => {
+  const clickCon = event.composedPath().includes(container)
+  const clickBur = event.composedPath().includes(menuBurgerBtn)
+
+  if (clickBur) {
+    container.classList.toggle('active')
+  } else if (clickCon) {
+    container.classList.add('active')
+
+    if (bClock || bTimer || bStopwatch) {
+      container.classList.remove('active')
+    }
+  } else {
+    container.classList.remove('active')
+  }
+})
+
+
 
 /* Tabs */
 
 // Clock
 bClock.onclick = () => {
   mMain.classList.add('active')
-  bContainer.classList.remove('active')
 
   if (mMain.classList.contains('active')) {
     mMain.classList.remove('none')
@@ -154,7 +161,6 @@ bClock.onclick = () => {
 // Timer
 bTimer.onclick = () => {
   mTimer.classList.add('active')
-  bContainer.classList.remove('active')
 
   if (mTimer.classList.contains('active')) {
     mTimer.classList.remove('none')
@@ -183,7 +189,6 @@ bTimer.onclick = () => {
 // Stopwatch
 bStopwatch.onclick = () => {
   mStopwatch.classList.add('active')
-  bContainer.classList.remove('active')
 
   if (mStopwatch.classList.contains('active')) {
     mStopwatch.classList.remove('none')
@@ -210,5 +215,4 @@ bStopwatch.onclick = () => {
 }
 
 // Beati
-
 const btnStopwatch = document.querySelector('.btn-start-stopwatch')
