@@ -8,6 +8,7 @@ const start = document.querySelector('.start-btn'),
   output = document.querySelector('.box-stopwatch'),
   form = document.querySelector('.form')
 
+// Vars
 let sec = 0
 let min = 0
 let hrs = 0
