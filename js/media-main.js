@@ -88,8 +88,19 @@ setInterval(() => {
 }, 1000);
 
 // Menu Burger
-document.querySelector('.btn-menu-burger').addEventListener('click', () => {
-  document.querySelector('.menu-container').classList.toggle('active')
+const container = document.querySelector('.menu-container')
+const menuBurgerBtn = document.querySelector('.btn-menu-burger')
+
+// Mene Burger Swap
+document.addEventListener('click', event => {
+  const clickCon = event.composedPath().includes(menuBurgerBtn)
+  const clickBur = event.composedPath().includes(menuBurgerBtn)
+
+  if (!clickCon || !clickBur) {
+    container.classList.remove('active')
+  } else {
+    container.classList.toggle('active')
+  }
 })
 
 // Menu Burger Swap
@@ -108,6 +119,8 @@ const iClock = document.querySelector('.media-item-clock'),
   iTimer = document.querySelector('.media-item-timer'),
   iStopwatch = document.querySelector('.media-item-stopwatch')
 
+
+/* Tabs */
 
 // Clock
 bClock.onclick = () => {
