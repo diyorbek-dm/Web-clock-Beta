@@ -15,76 +15,45 @@ setInterval(() => {
     hour = date.getHours() + 3,
     minute = date.getMinutes()
 
-  // Hours - Pekin
-  if (hour < 10) {
-    londonHour.innerHTML = `0${hour} :`
-  } else {
-    londonHour.innerHTML = `${hour} :`
-  }
+  hour = hour.toString().padStart(2, '0')
+  minute = minute.toString().padStart(2, '0')
 
-  //  Minutes Pekin
-  if (minute < 10) {
-    londonMin.innerHTML = `0${minute}`
-  } else {
-    londonMin.innerHTML = `${minute}`
-  }
+  londonHour.innerHTML = `${hour} :&nbsp;`
+  londonMin.innerHTML = `${minute}`
 
   // New York
   let yorkData = new Date(),
-    yHour = yorkData.getHours() + 24 - 10,
+    yHour = yorkData.getHours() - 10,
     yMinute = yorkData.getMinutes()
 
-  // Hours - New York
-  if (yHour < 10) {
-    yorkHour.innerHTML = `0${yHour} :`
-  } else {
-    yorkHour.innerHTML = `${yHour} :`
-  }
+  yHour = yHour.toString().padStart(2, '0')
+  yMinute = yMinute.toString().padStart(2, '0')
 
-  // Minutes - New york
-  if (yMinute < 10) {
-    yorkMinute.innerHTML = `0${yMinute}`
-  } else {
-    yorkMinute.innerHTML = `${yMinute}`
-  }
+  yorkHour.innerHTML = `${yHour} :&nbsp;`
+  yorkMinute.innerHTML = `${yMinute}`
 
   // Tokyo
   let tokyoData = new Date(),
     tHour = tokyoData.getHours() + 4,
     tMinute = tokyoData.getMinutes()
 
-  // Hours - Tokyo
-  if (tHour < 10) {
-    tokyoHour.innerHTML = `0${tHour} :`
-  } else {
-    tokyoHour.innerHTML = `${tHour} :`
-  }
+  tHour = tHour.toString().padStart(2, '0')
+  tMinute = tMinute.toString().padStart(2, '0')
 
-  // Minutes - Tokyo
-  if (tMinute < 10) {
-    tokyoMinute.innerHTML = `0${tMinute}`
-  } else {
-    tokyoMinute.innerHTML = `${tMinute}`
-  }
+  tokyoHour.innerHTML = `${tHour} :&nbsp;`
+  tokyoMinute.innerHTML = `${tMinute}`
 
   // London
   let lonData = new Date(),
-    lHour = yorkData.getHours() + 24 - 5,
+    lHour = yorkData.getHours() - 5,
     lMinute = yorkData.getMinutes()
 
-  // Hour - London
-  if (lHour < 10) {
-    lonHour.innerHTML = `0${lHour} :`
-  } else {
-    lonHour.innerHTML = `${lHour} :`
-  }
+  lHour = lHour.toString().padStart(2, '0')
+  lMinute = lMinute.toString().padStart(2, '0')
 
-  // Minute - London
-  if (lMinute < 10) {
-    lonMin.innerHTML = `0${lMinute}`
-  } else {
-    lonMin.innerHTML = `${lMinute}`
-  }
+  lonHour.innerHTML = `${lHour} :&nbsp;`
+  lonMin.innerHTML = `${lMinute}`
+
 }, 1000);
 
 
@@ -125,7 +94,6 @@ document.addEventListener('click', event => {
     container.classList.remove('active')
   }
 })
-
 
 
 /* Tabs */
@@ -213,6 +181,3 @@ bStopwatch.onclick = () => {
     iTimer.classList.add('none')
   }
 }
-
-// Beati
-const btnStopwatch = document.querySelector('.btn-start-stopwatch')
