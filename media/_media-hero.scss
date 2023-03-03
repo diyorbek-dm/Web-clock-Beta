@@ -1,176 +1,25 @@
-@media (max-width: 430px) {
+@media (max-width: 844px) {
   .display-main {
-    margin-top: 240px;
-
-    .media-main-background {
-      display: block;
-      width: 410px;
-      margin-bottom: 70px;
-    }
-
     .box-main {
       p {
-        font-size: 55px;
-        font-weight: 600;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+        font-size: 110px;
       }
     }
 
     .box-info {
       p {
-        font-size: 28px;
+        font-size: 27px;
         color: #959595;
       }
     }
   }
-
-  .media-global-time {
-    display: flex;
-    flex-direction: column;
-    width: 410px;
-    margin-top: 50px;
-  }
-
-  .mgt {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-
-    .global-title {
-      display: flex;
-      flex-direction: column;
-      justify-self: flex-start;
-    }
-
-    h2 {
-      font-family: $font-iniva;
-      font-weight: 500;
-      font-size: 38px;
-    }
-
-    .city-name {
-      font-family: $font-iniva;
-      font-weight: 400;
-      color: #959595;
-      font-size: 23px;
-    }
-
-    .media-time-span {
-      font-family: $font-iniva;
-      font-weight: 600;
-      font-size: 46px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
-  }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 769px) {
   .display-main {
-    margin-top: 170px;
-
-    .media-main-background {
-      display: block;
-      width: 375px;
-      margin-bottom: 70px;
-    }
-
     .box-main {
       p {
-        font-size: 50px;
-        font-weight: 600;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
-      }
-    }
-
-    .box-info {
-      p {
-        font-size: 26px;
-        color: #959595;
-      }
-    }
-  }
-
-  .media-global-time {
-    display: flex;
-    flex-direction: column;
-    width: 375px;
-    margin-top: 50px;
-  }
-
-  .mgt {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-
-    .global-title {
-      display: flex;
-      flex-direction: column;
-      justify-self: flex-start;
-    }
-
-    h2 {
-      font-family: $font-iniva;
-      font-weight: 500;
-      font-size: 35px;
-    }
-
-    span {
-      font-family: $font-iniva;
-      font-weight: 400;
-      font-size: 17px;
-    }
-
-    .city-name {
-      color: #959595;
-      font-size: 20px;
-    }
-
-    .media-time-span {
-      font-family: $font-iniva;
-      font-weight: 600;
-      font-size: 40px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .display-main {
-    margin-top: 190px;
-
-    .media-main-background {
-      width: 360px;
-    }
-  }
-
-  .media-global-time {
-    width: 360px;
-  }
-}
-
-@media (max-width: 370px) {
-  .display-main {
-    margin-top: 170px;
-
-    .media-main-background {
-      display: block;
-      width: 355px;
-      margin-bottom: 70px;
-    }
-
-    .box-main {
-      p {
-        font-size: 49px;
-        font-weight: 600;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+        font-size: 100px;
       }
     }
 
@@ -181,123 +30,308 @@
       }
     }
   }
-
-  .media-global-time {
-    display: flex;
-    flex-direction: column;
-    width: 355px;
-    margin-top: 50px;
-  }
-
-  .mgt {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-
-    .global-title {
-      display: flex;
-      flex-direction: column;
-      justify-self: flex-start;
-    }
-
-    h2 {
-      font-family: $font-iniva;
-      font-weight: 500;
-      font-size: 34px;
-    }
-
-    span {
-      font-family: $font-iniva;
-      font-weight: 400;
-      font-size: 17px;
-    }
-
-    .city-name {
-      color: #959595;
-      font-size: 20px;
-    }
-
-    .media-time-span {
-      font-family: $font-iniva;
-      font-weight: 600;
-      font-size: 39px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 25px;
-    }
-  }
 }
 
-@media (max-width: 320px) {
-  .display-main {
-    margin-top: 40px;
+ @media (max-width: 430px) {
+   .display-main {
+     margin-top: 240px;
 
-    .media-main-background {
-      display: block;
-      width: 300px;
-      margin-bottom: 60px;
-    }
+     .media-main-background {
+       display: block;
+       width: 410px;
+       margin-bottom: 70px;
+     }
 
-    .box-main {
-      p {
-        font-size: 40px;
-        font-weight: 600;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
-      }
-    }
+     .box-main {
+       p {
+         font-size: 55px;
+         font-weight: 600;
+         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+       }
+     }
 
-    .box-info {
-      p {
-        font-size: 22px;
-        color: #959595;
-      }
-    }
-  }
+     .box-info {
+       p {
+         font-size: 28px;
+         color: #959595;
+       }
+     }
+   }
 
-  .media-global-time {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin-top: 50px;
-  }
+   .media-global-time {
+     display: flex;
+     flex-direction: column;
+     width: 410px;
+     margin-top: 50px;
+   }
 
-  .mgt {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+   .mgt {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 40px;
 
-    .global-title {
-      display: flex;
-      flex-direction: column;
-      justify-self: flex-start;
-    }
+     .global-title {
+       display: flex;
+       flex-direction: column;
+       justify-self: flex-start;
+     }
 
-    h2 {
-      font-family: $font-iniva;
-      font-weight: 500;
-      font-size: 30px;
-    }
+     h2 {
+       font-family: $font-iniva;
+       font-weight: 500;
+       font-size: 38px;
+     }
 
-    span {
-      font-family: $font-iniva;
-      font-weight: 400;
-      font-size: 17px;
-    }
+     .city-name {
+       font-family: $font-iniva;
+       font-weight: 400;
+       color: #959595;
+       font-size: 23px;
+     }
 
-    .city-name {
-      color: #959595;
-    }
+     .media-time-span {
+       font-family: $font-iniva;
+       font-weight: 600;
+       font-size: 46px;
+     }
 
-    .media-time-span {
-      font-family: $font-iniva;
-      font-weight: 600;
-      font-size: 36px;
-    }
+     &:not(:last-child) {
+       margin-bottom: 25px;
+     }
+   }
+ }
 
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-}
+ @media (max-width: 390px) {
+   .display-main {
+     margin-top: 170px;
+
+     .media-main-background {
+       display: block;
+       width: 375px;
+       margin-bottom: 70px;
+     }
+
+     .box-main {
+       p {
+         font-size: 50px;
+         font-weight: 600;
+         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+       }
+     }
+
+     .box-info {
+       p {
+         font-size: 26px;
+         color: #959595;
+       }
+     }
+   }
+
+   .media-global-time {
+     display: flex;
+     flex-direction: column;
+     width: 375px;
+     margin-top: 50px;
+   }
+
+   .mgt {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 40px;
+
+     .global-title {
+       display: flex;
+       flex-direction: column;
+       justify-self: flex-start;
+     }
+
+     h2 {
+       font-family: $font-iniva;
+       font-weight: 500;
+       font-size: 35px;
+     }
+
+     span {
+       font-family: $font-iniva;
+       font-weight: 400;
+       font-size: 17px;
+     }
+
+     .city-name {
+       color: #959595;
+       font-size: 20px;
+     }
+
+     .media-time-span {
+       font-family: $font-iniva;
+       font-weight: 600;
+       font-size: 40px;
+     }
+
+     &:not(:last-child) {
+       margin-bottom: 25px;
+     }
+   }
+ }
+
+ @media (max-width: 375px) {
+   .display-main {
+     margin-top: 190px;
+
+     .media-main-background {
+       width: 360px;
+     }
+   }
+
+   .media-global-time {
+     width: 360px;
+   }
+ }
+
+ @media (max-width: 370px) {
+   .display-main {
+     margin-top: 170px;
+
+     .media-main-background {
+       display: block;
+       width: 355px;
+       margin-bottom: 70px;
+     }
+
+     .box-main {
+       p {
+         font-size: 49px;
+         font-weight: 600;
+         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+       }
+     }
+
+     .box-info {
+       p {
+         font-size: 25px;
+         color: #959595;
+       }
+     }
+   }
+
+   .media-global-time {
+     display: flex;
+     flex-direction: column;
+     width: 355px;
+     margin-top: 50px;
+   }
+
+   .mgt {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 40px;
+
+     .global-title {
+       display: flex;
+       flex-direction: column;
+       justify-self: flex-start;
+     }
+
+     h2 {
+       font-family: $font-iniva;
+       font-weight: 500;
+       font-size: 34px;
+     }
+
+     span {
+       font-family: $font-iniva;
+       font-weight: 400;
+       font-size: 17px;
+     }
+
+     .city-name {
+       color: #959595;
+       font-size: 20px;
+     }
+
+     .media-time-span {
+       font-family: $font-iniva;
+       font-weight: 600;
+       font-size: 39px;
+     }
+
+     &:not(:last-child) {
+       margin-bottom: 25px;
+     }
+   }
+ }
+
+ @media (max-width: 320px) {
+   .display-main {
+     margin-top: 40px;
+
+     .media-main-background {
+       display: block;
+       width: 300px;
+       margin-bottom: 60px;
+     }
+
+     .box-main {
+       p {
+         font-size: 40px;
+         font-weight: 600;
+         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.27);
+       }
+     }
+
+     .box-info {
+       p {
+         font-size: 22px;
+         color: #959595;
+       }
+     }
+   }
+
+   .media-global-time {
+     display: flex;
+     flex-direction: column;
+     width: 300px;
+     margin-top: 50px;
+   }
+
+   .mgt {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     .global-title {
+       display: flex;
+       flex-direction: column;
+       justify-self: flex-start;
+     }
+
+     h2 {
+       font-family: $font-iniva;
+       font-weight: 500;
+       font-size: 30px;
+     }
+
+     span {
+       font-family: $font-iniva;
+       font-weight: 400;
+       font-size: 17px;
+     }
+
+     .city-name {
+       color: #959595;
+     }
+
+     .media-time-span {
+       font-family: $font-iniva;
+       font-weight: 600;
+       font-size: 36px;
+     }
+
+     &:not(:last-child) {
+       margin-bottom: 20px;
+     }
+   }
+ }

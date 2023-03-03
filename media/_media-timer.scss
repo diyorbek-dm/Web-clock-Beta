@@ -1,3 +1,219 @@
+@media (max-width: 932px) {
+  .display-timer {
+    margin-bottom: 40px;
+    margin-top: 160px;
+  }
+
+  .timer-output {
+    margin-bottom: 40px;
+
+    .timer-output-time {
+      font-size: 110px;
+    }
+
+    .colon {
+      font-size: 58px;
+    }
+  }
+
+  .inputs {
+    margin-top: 0px;
+
+    .input {
+      width: 70px;
+      height: 60px;
+      font-size: 25px;
+    }
+
+    .output-colon {
+      font-size: 30px;
+    }
+  }
+
+  .hms {
+    span {
+      font-size: 13px;
+    }
+  }
+
+  .timer-button {
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    .timer-start {
+      font-size: 20px;
+      width: 140px;
+      height: 42px;
+    }
+  }
+
+  .timer-done {
+    width: 700px;
+    height: 320px;
+    margin-bottom: 90px;
+
+    img {
+      display: none;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    .done-btn {
+      font-size: 20px;
+      width: 145px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 844px) {
+  .display-timer {
+    margin-bottom: 40px;
+    margin-top: 160px;
+  }
+
+  .timer-output {
+    margin-bottom: 40px;
+
+    .timer-output-time {
+      font-size: 110px;
+    }
+
+    .colon {
+      font-size: 58px;
+    }
+  }
+
+  .inputs {
+    margin-top: 0px;
+
+    .input {
+      width: 70px;
+      height: 60px;
+      font-size: 25px;
+    }
+
+    .output-colon {
+      font-size: 30px;
+    }
+  }
+
+  .hms {
+    span {
+      font-size: 13px;
+    }
+  }
+
+  .timer-button {
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    .timer-start {
+      font-size: 20px;
+      width: 140px;
+      height: 42px;
+    }
+  }
+
+  .timer-done {
+    width: 700px;
+    height: 320px;
+    margin-bottom: 90px;
+
+    img {
+      display: none;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    .done-btn {
+      font-size: 20px;
+      width: 145px;
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .display-timer {
+    margin-bottom: 40px;
+    margin-top: 160px;
+  }
+
+  .timer-output {
+    margin-bottom: 40px;
+
+    .timer-output-time {
+      font-size: 100px;
+    }
+
+    .colon {
+      font-size: 58px;
+    }
+  }
+
+  .inputs {
+    margin-top: 0px;
+
+    .input {
+      width: 70px;
+      height: 60px;
+      font-size: 25px;
+    }
+
+    .output-colon {
+      font-size: 30px;
+    }
+  }
+
+  .hms {
+    span {
+      font-size: 13px;
+    }
+  }
+
+  .timer-button {
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    .timer-start {
+      font-size: 20px;
+      width: 140px;
+      height: 42px;
+    }
+  }
+
+  .timer-done {
+    width: 700px;
+    height: 220px;
+    margin-bottom: 120px;
+
+    img {
+      display: none;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    .done-btn {
+      font-size: 20px;
+      width: 145px;
+      height: 40px;
+    }
+  }
+}
+
 @media (max-width: 430px) {
   .display-timer {
     margin-bottom: 40px;

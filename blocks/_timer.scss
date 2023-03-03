@@ -9,6 +9,10 @@ input {
   border: none;
 }
 
+.display-timer {
+  margin-top: 70px;
+}
+
 .hms {
   display: flex;
   flex-direction: column;
@@ -73,7 +77,6 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
   margin-bottom: 70px;
 
   .colon {

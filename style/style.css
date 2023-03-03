@@ -58,6 +58,10 @@ input {
   border: none;
 }
 
+.display-timer {
+  margin-top: 70px;
+}
+
 .hms {
   display: flex;
   flex-direction: column;
@@ -123,7 +127,6 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
   margin-bottom: 70px;
 }
 .timer-output .colon {
@@ -344,6 +347,7 @@ input {
   font-family: "Univa Nova", sans-serif;
   font-weight: 500;
   font-size: 35px;
+  color: #959595;
 }
 
 .all-tabs {
@@ -474,6 +478,174 @@ input {
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 932px) {
+  .display-timer {
+    margin-bottom: 40px;
+    margin-top: 160px;
+  }
+  .timer-output {
+    margin-bottom: 40px;
+  }
+  .timer-output .timer-output-time {
+    font-size: 110px;
+  }
+  .timer-output .colon {
+    font-size: 58px;
+  }
+  .inputs {
+    margin-top: 0px;
+  }
+  .inputs .input {
+    width: 70px;
+    height: 60px;
+    font-size: 25px;
+  }
+  .inputs .output-colon {
+    font-size: 30px;
+  }
+  .hms span {
+    font-size: 13px;
+  }
+  .timer-button {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .timer-button .timer-start {
+    font-size: 20px;
+    width: 140px;
+    height: 42px;
+  }
+  .timer-done {
+    width: 700px;
+    height: 320px;
+    margin-bottom: 90px;
+  }
+  .timer-done img {
+    display: none;
+  }
+  .timer-done h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .timer-done .done-btn {
+    font-size: 20px;
+    width: 145px;
+    height: 40px;
+  }
+}
+@media (max-width: 844px) {
+  .display-timer {
+    margin-bottom: 40px;
+    margin-top: 160px;
+  }
+  .timer-output {
+    margin-bottom: 40px;
+  }
+  .timer-output .timer-output-time {
+    font-size: 110px;
+  }
+  .timer-output .colon {
+    font-size: 58px;
+  }
+  .inputs {
+    margin-top: 0px;
+  }
+  .inputs .input {
+    width: 70px;
+    height: 60px;
+    font-size: 25px;
+  }
+  .inputs .output-colon {
+    font-size: 30px;
+  }
+  .hms span {
+    font-size: 13px;
+  }
+  .timer-button {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .timer-button .timer-start {
+    font-size: 20px;
+    width: 140px;
+    height: 42px;
+  }
+  .timer-done {
+    width: 700px;
+    height: 320px;
+    margin-bottom: 90px;
+  }
+  .timer-done img {
+    display: none;
+  }
+  .timer-done h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .timer-done .done-btn {
+    font-size: 20px;
+    width: 145px;
+    height: 40px;
+  }
+}
+@media (max-width: 769px) {
+  .display-timer {
+    margin-bottom: 40px;
+    margin-top: 160px;
+  }
+  .timer-output {
+    margin-bottom: 40px;
+  }
+  .timer-output .timer-output-time {
+    font-size: 100px;
+  }
+  .timer-output .colon {
+    font-size: 58px;
+  }
+  .inputs {
+    margin-top: 0px;
+  }
+  .inputs .input {
+    width: 70px;
+    height: 60px;
+    font-size: 25px;
+  }
+  .inputs .output-colon {
+    font-size: 30px;
+  }
+  .hms span {
+    font-size: 13px;
+  }
+  .timer-button {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .timer-button .timer-start {
+    font-size: 20px;
+    width: 140px;
+    height: 42px;
+  }
+  .timer-done {
+    width: 700px;
+    height: 220px;
+    margin-bottom: 120px;
+  }
+  .timer-done img {
+    display: none;
+  }
+  .timer-done h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .timer-done .done-btn {
+    font-size: 20px;
+    width: 145px;
+    height: 40px;
   }
 }
 @media (max-width: 430px) {
@@ -693,6 +865,42 @@ input {
     margin-top: 200px;
   }
 }
+@media (max-width: 932px) {
+  .display-stopwatch {
+    margin-top: 40px;
+  }
+  .display-stopwatch .box-stopwatch .time p {
+    font-size: 110px;
+  }
+  .display-stopwatch .form {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 844px) {
+  .display-stopwatch {
+    margin-top: 40px;
+  }
+  .display-stopwatch .box-stopwatch .time p {
+    font-size: 110px;
+  }
+  .display-stopwatch .form {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 769px) {
+  .display-stopwatch {
+    margin-top: 40px;
+  }
+  .display-stopwatch .box-stopwatch {
+    border-radius: 20px;
+  }
+  .display-stopwatch .box-stopwatch .time p {
+    font-size: 100px;
+  }
+  .display-stopwatch .form {
+    margin-top: 40px;
+  }
+}
 @media (max-width: 430px) {
   .display-stopwatch {
     margin-top: 40px;
@@ -808,6 +1016,24 @@ input {
   .form .stopwatch-buttons {
     width: 160px;
     height: 50px;
+  }
+}
+@media (max-width: 844px) {
+  .display-main .box-main p {
+    font-size: 110px;
+  }
+  .display-main .box-info p {
+    font-size: 27px;
+    color: #959595;
+  }
+}
+@media (max-width: 769px) {
+  .display-main .box-main p {
+    font-size: 100px;
+  }
+  .display-main .box-info p {
+    font-size: 25px;
+    color: #959595;
   }
 }
 @media (max-width: 430px) {
@@ -1046,6 +1272,11 @@ input {
   }
   .mgt:not(:last-child) {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .nav-main {
+    margin-top: 25px;
   }
 }
 @media (max-width: 430px) {
